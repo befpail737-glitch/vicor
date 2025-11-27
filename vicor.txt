@@ -1,0 +1,93 @@
+提示词：构建“Vicor代理”专业分销商网站
+项目目标：
+做一个以“Vicor distributor”为核心关键词的B2B电子元器件分销商网站。
+绑定域名： vicor.elec-distributor.com (建议修改为与品牌相关的子域)
+技术栈： HTML5 + CSS3 (语义化标签，响应式设计)。
+部署平台： Cloudflare Pages。
+具体要求：
+1. SEO优化基础 (SEO Foundation)
+百度/谷歌SEO友好： 网站结构清晰，URL必须为静态化结构（例如 /products/vicor-dcdc/），包含层级分明的面包屑导航（Breadcrumb）。
+Sitemap： 生成用于SEO的 sitemap.xml。
+Meta标签： 优化所有页面的 Title, Keywords, Description。
+图片优化： 所有图片（img标签）必须包含 alt 属性，描述内容并自然包含关键词（如“Vicor BCM模块引脚图”）。
+全站Meta定义：
+Title (标题): Vicor代理商_Vicor电源模块授权代理_力通 (或您的品牌名)
+Description (描述): 力通是Vicor (Vicor Corporation) 官方授权一级代理商，供应Vicor高密度电源模块、DC-DC转换器、AC-DC转换器、及FPA架构全系列产品。提供原装正品、电源设计支持和优势价格。
+Keywords (关键词): Vicor代理, Vicor代理商, Vicor电源模块代理, DC-DC转换器代理
+关键词布局策略 (Keyword Mapping):
+核心词： Vicor代理, Vicor代理商
+地域扩展： Vicor代理USA, Vicor代理商China, Vicor日本代理, Vicor德国代理
+产品组合： Vicor BCM代理, Vicor VTM代理, Vicor PRM代理, 高压DC-DC代理
+长尾/问题： 如何设计48V配电系统, Vicor模块选型指南, Vicor电源模块价格, FPA架构优势
+2. 首页设计 (Homepage Design)
+打造一个展示高功率密度技术实力的首页：
+英雄横幅 (Hero Banner): 极具科技感的背景（SVG抽象电路），文案强调“高功率密度”和“48V电源专家”。
+核心优势 (Why Choose Us): 突出“原厂渠道”、“技术支持（特别是散热与PCB布局建议）”、“现货库存”。
+核心产品领域 (Core Product Areas): 展示 DC-DC转换器, AC-DC转换器, 稳压模块(PRM), 变压模块(VTM/BCM)。
+解决方案 (Solutions Preview): 展示 数据中心(Data Center), 航空航天(Aerospace), 机器人(Robotics), 铁路(Rail)。
+最新动态 (Latest News): 展示Vicor最新技术动态（如ChiP封装技术）。
+CTA (行动号召): 底部显著位置引导联系报价。
+3. 产品中心 (Product Center)
+分类展示： 按Vicor产品线分类，如：
+Modular Power (电源模块): DCM, BCM, PRM, VTM
+Input Filter (输入滤波器): M-FIAM, QPI
+Picor (半导体解决方案): Cool-Power ZVS
+内容描述： 每个分类页顶部（H1下方）增加200-300字原创描述。介绍该系列（如 Vicor DCM™）的特点（高频、高密度）、封装技术（ChiP, VIA）及核心应用。自然融入“Vicor DCM代理”等词。
+选型指南入口： 链接到技术文章——《如何为您的48V系统选择合适的Vicor模块？》。
+型号表格 (Model Table):
+包含列：型号, 输入电压范围, 输出电压, 功率, 效率, 封装尺寸, 散热等级。
+Schema.org： 表格页必须植入 Product 类型的 JSON-LD 结构化数据。
+FAE点评： 每个分类下增加一段“工程师视点”，讲解该类产品在电源链中的作用。
+FAQ模块： 针对该类产品回答3个高频问题（例如：Vicor模块的散热片如何选择？）。
+多样化CTA： 下载Datasheet / 申请样品 / 获取梯队报价 / 咨询电源工程师。
+4. 技术支持 (Technical Support)
+分类结构： 选型指南 / 应用笔记 / 热设计 / 封装技术。
+标签系统 (Tags): 使用标签如：48V Bus, ZVS, FPA架构, ChiP封装, 散热管理。点击标签可聚合文章。
+上下文链接： 文章中提到 BCM6123 时，自动链接到对应的产品详情页；提到“零电压开关”时链接到相关原理解析。
+作者简介： 为FAE创建作者页（姓名、电源行业经验、擅长拓扑），并在每篇文章头部关联作者，提升E-E-A-T（专业性、权威性）。
+5. 解决方案 (Solutions)
+独立URL： 例如 /solutions/data-center-48v/。
+内容模块：
+方案框图 (Block Diagram): 必须包含高清晰度的SVG或图片框图，展示从高压到负载点(PoL)的电源链，Alt标签详尽。
+核心优势： 阐述采用Vicor方案带来的体积缩小、效率提升。
+推荐BOM： 列出方案中的关键Vicor料号，并链接到产品页。
+发布数量： 5篇（建议主题：AI数据中心供电、系留无人机供电、电动汽车48V/12V转换、铁路车载电源、大功率LED驱动）。
+6. 新闻中心 (News Center)
+栏目分离： “公司新闻”（发货通知、放假通知）与“行业动态”（Vicor收购新闻、电源技术趋势）。
+Schema标记： 对“行业动态”使用 NewsArticle Schema标记，争取搜索结果的富媒体摘要。
+7. 详情页内容深度 (Content Depth)
+字数要求： 新闻、解决方案、技术文章详情页不少于800字。
+质量要求： 必须包含电源设计的实际痛点解决（如：EMI抑制、热仿真数据），体现专业度。
+结构化排版： 使用 H1, H2, H3 清晰分层。
+侧边栏： 推荐相关产品和相关技术文章。
+底部CTA： 统一的“联系分销商”表单或按钮。
+8. 页面数量与发布要求
+产品表格页： 5个不同系列。
+解决方案页： 5篇独立方案。
+技术支持页： 5篇深度技术文（含选型、应用笔记）。
+新闻页： 5篇。
+9. 关于我们 & 联系我们
+关于我们： 模块化布局，介绍公司在电源领域的专业背景、仓储能力。
+联系我们： 网格布局。
+显示具体联系方式。
+侧边悬浮栏： WhatsApp: +86 15013702378, WeChat: +86 18612518271。
+10. 内部链接策略 (Internal Linking)
+形成 文章 -> 产品 -> 解决方案 -> 文章 的闭环流量。
+技术文章中提及具体型号（如 VTM48EF012T050A00）必须加超链接指向产品页。
+11. 视觉与UI (Visuals & SVG)
+SVG图标库： 生成一套针对电源行业的图标：
+产品类：转换器图标、模块图标、IC图标。
+特性类：闪电（功率）、温度计（散热）、波形（纹波）、尺子（高密度）。
+背景图： 生成抽象的科技线条、PCB布线纹理、电流流向示意图作为Banner背景。
+Logo： 设计一个基于文本的、简洁的SVG Logo。
+12. 响应式与代码规范
+全站响应式，适配移动端。
+CSS采用模块化命名（如BEM命名法），保持代码整洁。
+13. 网站架构 (Site Architecture)
+首页 (Home)
+产品中心 (Products) -> 模块电源, 滤波器, 自定义电源...
+解决方案 (Solutions) -> 数据中心, 工业自动化, 军工...
+技术支持 (Support) -> 选型指南, 应用笔记, 常见问题
+新闻中心 (News) -> 行业动态, 公司新闻
+关于我们 (About Us)
+联系我们 (Contact)

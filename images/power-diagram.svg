@@ -1,0 +1,25 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F3F4F6"/>
+  <text x="300" y="200" font-family="Arial" font-size="18" fill="#6B7280" text-anchor="middle">48V Bus Conversion Diagram</text>
+  <text x="300" y="230" font-family="Arial" font-size="14" fill="#9CA3AF" text-anchor="middle">[Technical Power System Block Diagram]</text>
+  <!-- Simple representation of power chain -->
+  <rect x="50" y="150" width="100" height="100" fill="#3B82F6" rx="5"/>
+  <text x="100" y="205" font-family="Arial" font-size="12" fill="white" text-anchor="middle">48V Bus</text>
+  
+  <rect x="250" y="150" width="100" height="100" fill="#10B981" rx="5"/>
+  <text x="300" y="205" font-family="Arial" font-size="12" fill="white" text-anchor="middle">PRM</text>
+  
+  <rect x="450" y="150" width="100" height="100" fill="#8B5CF6" rx="5"/>
+  <text x="500" y="205" font-family="Arial" font-size="12" fill="white" text-anchor="middle">VTM</text>
+  
+  <!-- Arrows -->
+  <line x1="150" y1="200" x2="250" y2="200" stroke="#D1D5DB" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="200" x2="450" y2="200" stroke="#D1D5DB" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#D1D5DB"/>
+    </marker>
+  </defs>
+</svg>

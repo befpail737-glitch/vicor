@@ -1,0 +1,24 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <pattern id="circuitPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 20 20 L 80 20 L 80 80 L 20 80 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bgGradient)" />
+  <rect width="100%" height="100%" fill="url(#circuitPattern)" />
+  
+  <g opacity="0.2">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <text x="600" y="220" font-family="Arial" font-size="36" fill="white" text-anchor="middle" opacity="0.9">Vicor Power Solutions</text>
+  <text x="600" y="260" font-family="Arial" font-size="18" fill="white" text-anchor="middle" opacity="0.8">High-Efficiency Power Modules for Advanced Applications</text>
+</svg>

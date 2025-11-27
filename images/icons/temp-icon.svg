@@ -1,0 +1,6 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="none"/>
+  <circle cx="50" cy="75" r="15" fill="#EF4444"/>
+  <rect x="45" y="30" width="10" height="45" fill="#EF4444"/>
+  <text x="50" y="20" font-family="Arial" font-size="12" fill="#1F2937" text-anchor="middle">°C</text>
+</svg>
