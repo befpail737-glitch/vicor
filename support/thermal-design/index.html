@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicor Thermal Design - Heat Management Guidelines - LiTong Distributor</title>
+    <meta name="description" content="Vicor thermal design guidelines and best practices for heat management in high-density power applications. Heat sink selection, airflow, and thermal modeling.">
+    <meta name="keywords" content="Vicor thermal design, heat management, power thermal design, heat sink selection, thermal modeling, power electronics cooling">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Vicor Thermal Design - Heat Management Guidelines">
+    <meta property="og:description" content="Vicor thermal design guidelines and best practices for heat management in high-density power applications. Heat sink selection, airflow, and thermal modeling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vicor.elec-distributor.com/support/thermal-design/">
+    <meta property="og:image" content="https://vicor.elec-distributor.com/images/thermal-design.jpg">
+
+    <!-- Schema Markup for Support Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Vicor Thermal Design",
+        "description": "Thermal design guidelines and best practices for Vicor products",
+        "about": "Vicor Thermal Design",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://vicor.elec-distributor.com/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Support",
+                "item": "https://vicor.elec-distributor.com/support/"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Thermal Design",
+                "item": "https://vicor.elec-distributor.com/support/thermal-design/"
+            }]
+        }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-top">
+                <a href="/" class="logo" aria-label="LiTong Vicor Distributor Home">
+                    <img src="/images/logo.svg" alt="LiTong Vicor Distributor Logo" width="180" height="50">
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="/products/" class="nav-link">Products <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/products/modular-power/" class="dropdown-link">Modular Power</a></li>
+                            <li><a href="/products/input-filter/" class="dropdown-link">Input Filter</a></li>
+                            <li><a href="/products/picor/" class="dropdown-link">Picor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/solutions/" class="nav-link">Solutions <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/solutions/data-center/" class="dropdown-link">Data Center</a></li>
+                            <li><a href="/solutions/aerospace/" class="dropdown-link">Aerospace</a></li>
+                            <li><a href="/solutions/robotics/" class="dropdown-link">Robotics</a></li>
+                            <li><a href="/solutions/rail/" class="dropdown-link">Rail</a></li>
+                            <li><a href="/solutions/automotive/" class="dropdown-link">Automotive</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a href="/support/" class="nav-link active">Support <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/support/selection-guides/" class="dropdown-link">Selection Guides</a></li>
+                            <li><a href="/support/application-notes/" class="dropdown-link">Application Notes</a></li>
+                            <li><a href="/support/thermal-design/" class="dropdown-link active">Thermal Design</a></li>
+                            <li><a href="/support/packaging-technology/" class="dropdown-link">Packaging Technology</a></li>
+                            <li><a href="/support/faq/" class="dropdown-link">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/news/" class="nav-link">News <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/news/industry-dynamics/" class="dropdown-link">Industry Dynamics</a></li>
+                            <li><a href="/news/company-news/" class="dropdown-link">Company News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/contact/" class="nav-link cta-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Floating Contact Bar -->
+        <div class="floating-contact" aria-label="Contact information">
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span>WhatsApp: +86 15013702378</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">💬</span>
+                <span>WeChat: +86 18612518271</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="/support/">Support</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="current-page">Thermal Design</span>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-content" role="main">
+        <div class="container">
+            <header class="page-header">
+                <h1>Vicor Thermal Design</h1>
+                <p class="page-description">
+                    Comprehensive thermal design guidelines and best practices for managing heat in high-density power applications.
+                    Learn about heat sink selection, airflow requirements, thermal modeling, and PCB thermal design for optimal performance.
+                </p>
+            </header>
+
+            <!-- Introduction Content -->
+            <section class="section-intro mb-xl">
+                <h2>Thermal Management in High-Density Power Systems</h2>
+                <p>
+                    While Vicor's high-efficiency power modules generate less heat than traditional solutions, thermal management remains
+                    critical for long-term reliability and optimal performance. Proper thermal design ensures modules operate within
+                    their specified temperature ranges, maximizing both performance and service life.
+                </p>
+                <p>
+                    Our thermal design guidelines provide comprehensive information on effectively managing heat in various applications
+                    from data centers to aerospace, considering factors such as ambient temperature, cooling methods, and packaging constraints.
+                </p>
+            </section>
+
+            <!-- Thermal Design Categories -->
+            <section class="section-categories mb-xl">
+                <h2>Thermal Design Resources</h2>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3>Module-Specific Thermal Data</h3>
+                        <p>
+                            Thermal characteristics and design recommendations for specific Vicor module types including DCM, BCM, PRM, and VTM.
+                            Includes thermal resistance values, power derating curves, and mounting recommendations.
+                        </p>
+                        <ul>
+                            <li>DCM thermal characteristics</li>
+                            <li>BCM thermal design</li>
+                            <li>PRM thermal management</li>
+                            <li>VTM thermal performance</li>
+                        </ul>
+                        <a href="/support/thermal-design/module-specific/" class="btn btn--ghost">View Resources</a>
+                    </div>
+                    <div class="card">
+                        <h3>Cooling Method Selection</h3>
+                        <p>
+                            Guidelines for selecting appropriate cooling methods including natural convection, forced air, and conduction cooling.
+                            Comparison of cooling approaches based on power density, ambient conditions, and system requirements.
+                        </p>
+                        <ul>
+                            <li>Natural convection cooling</li>
+                            <li>Forced air cooling</li>
+                            <li>Conduction cooling</li>
+                            <li>Liquid cooling systems</li>
+                        </ul>
+                        <a href="/support/thermal-design/cooling-methods/" class="btn btn--ghost">View Resources</a>
+                    </div>
+                    <div class="card">
+                        <h3>Heat Sink and Thermal Interface Selection</h3>
+                        <p>
+                            Recommendations for selecting heat sinks, thermal interface materials, and mounting methods.
+                            Includes thermal modeling tools and performance characterization for various thermal management solutions.
+                        </p>
+                        <ul>
+                            <li>Heat sink selection criteria</li>
+                            <li>Thermal interface materials</li>
+                            <li>Mounting methods and hardware</li>
+                            <li>Performance validation</li>
+                        </ul>
+                        <a href="/support/thermal-design/heat-sinks/" class="btn btn--ghost">View Resources</a>
+                    </div>
+                    <div class="card">
+                        <h3>PCB Thermal Design</h3>
+                        <p>
+                            Guidelines for PCB thermal design including copper distribution, via placement, and thermal vias.
+                            Techniques for effective heat transfer from modules to the PCB and surrounding environment.
+                        </p>
+                        <ul>
+                            <li>Copper distribution strategies</li>
+                            <li>Thermal via placement</li>
+                            <li>Ground plane thermal design</li>
+                            <li>Thermal simulation techniques</li>
+                        </ul>
+                        <a href="/support/thermal-design/pcb-thermal/" class="btn btn--ghost">View Resources</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Thermal Design Fundamentals -->
+            <section class="section-fundamentals mb-xl">
+                <h2>Thermal Design Fundamentals</h2>
+                <div class="card">
+                    <h3>Understanding Thermal Resistance</h3>
+                    <p>
+                        Thermal resistance is the fundamental parameter for thermal design, expressed in °C/W. It represents the temperature
+                        rise per watt of power dissipated. The total thermal resistance includes all heat transfer paths:
+                    </p>
+                    <ul>
+                        <li>R_thJ-C: Junction to case thermal resistance</li>
+                        <li>R_thC-HS: Case to heat sink thermal resistance (with TIM)</li>
+                        <li>R_thHS-A: Heat sink to ambient thermal resistance</li>
+                    </ul>
+                    <p>
+                        The total temperature rise is calculated as: ΔT = P_dissipated × R_th_total
+                    </p>
+                    
+                    <h3>Ambient Temperature Considerations</h3>
+                    <p>
+                        System thermal design must account for the full operational ambient temperature range, not just room temperature.
+                        Many applications require operation in temperatures from -40°C to +85°C or higher, significantly affecting thermal management requirements.
+                    </p>
+                    
+                    <h3>Power Dissipation Calculations</h3>
+                    <p>
+                        Power dissipation depends on operating conditions including input voltage, output voltage, load current, and switching frequency:
+                    </p>
+                    <ul>
+                        <li>Dissipation = Input Power - Output Power</li>
+                        <li>Efficiency impacts dissipation significantly</li>
+                        <li>Light-load efficiency also matters for thermal design</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Thermal Modeling Tools -->
+            <section class="section-modeling mb-xl">
+                <h2>Thermal Modeling and Simulation</h2>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3>Thermal Modeling Approaches</h3>
+                        <p>
+                            Effective thermal design often requires simulation tools to predict temperature distributions and optimize thermal performance.
+                        </p>
+                        <ul>
+                            <li>Simple thermal resistance networks for quick estimates</li>
+                            <li>Computational Fluid Dynamics (CFD) for detailed analysis</li>
+                            <li>Finite element thermal modeling</li>
+                            <li>Thermal equivalent circuit models</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Simulation Tools and Resources</h3>
+                        <p>
+                            Vicor provides various tools and resources to assist with thermal modeling and simulation.
+                        </p>
+                        <ul>
+                            <li>Online thermal calculators</li>
+                            <li>Thermal simulation models (CAD files)</li>
+                            <li>Thermal characterization data</li>
+                            <li>Reference design examples</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Engineer's Perspective -->
+            <section class="section-engineer-perspective mb-xl">
+                <h2>FAE Perspective: Thermal Design Practices</h2>
+                <div class="card">
+                    <h3>Design for Worst-Case Conditions</h3>
+                    <p>
+                        Effective thermal design must account for worst-case operating conditions:
+                    </p>
+                    <ul>
+                        <li>Maximum ambient temperature</li>
+                        <li>Maximum power dissipation</li>
+                        <li>End-of-life derating</li>
+                        <li>System aging effects</li>
+                    </ul>
+                    <p>
+                        For reliability, we recommend designing for normal operating conditions plus appropriate margins, not just maximum ratings.
+                    </p>
+                    
+                    <h3>Module Packaging Impact</h3>
+                    <p>
+                        Different packaging technologies have different thermal characteristics:
+                    </p>
+                    <ul>
+                        <li>VIA packages offer excellent thermal performance through vertical mounting</li>
+                        <li>ChiP packages require careful PCB thermal design</li>
+                        <li>Traditional packages have standard thermal interfaces</li>
+                        <li>Package selection affects thermal design complexity</li>
+                    </ul>
+                    
+                    <h3>System-Level Thermal Considerations</h3>
+                    <p>
+                        Thermal interactions between multiple modules and other system components:
+                    </p>
+                    <ul>
+                        <li>Module-to-module thermal coupling</li>
+                        <li>Interactions with other heat-generating components</li>
+                        <li>Airflow patterns in multi-module systems</li>
+                        <li>Impact of system layout on thermal performance</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Cooling Methods -->
+            <section class="section-cooling mb-xl">
+                <h2>Cooling Methods Comparison</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Cooling Method</th>
+                                <th>Power Density</th>
+                                <th>Implementation</th>
+                                <th>Cost</th>
+                                <th>When to Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Natural Convection</strong></td>
+                                <td>Low to Medium</td>
+                                <td>Simple, no moving parts</td>
+                                <td>Low</td>
+                                <td>Low power systems, clean environment, high reliability requirements</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Forced Air</strong></td>
+                                <td>Medium to High</td>
+                                <td>Air movers required</td>
+                                <td>Medium</td>
+                                <td>Higher power systems, space-constrained applications</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conduction</strong></td>
+                                <td>Medium to High</td>
+                                <td>Direct thermal path</td>
+                                <td>Medium to High</td>
+                                <td>Harsh environments, vibration, sealed systems</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Liquid Cooling</strong></td>
+                                <td>Very High</td>
+                                <td>Complex cooling loop</td>
+                                <td>High</td>
+                                <td>Ultra-high power density, limited airflow space</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Resources and Tools -->
+            <section class="section-resources mb-xl">
+                <h2>Thermal Design Resources and Tools</h2>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3>Download Thermal Resources</h3>
+                        <ul>
+                            <li><a href="/resources/thermal-design-guide.pdf">Comprehensive Thermal Design Guide</a></li>
+                            <li><a href="/resources/heat-sink-selection-guide.pdf">Heat Sink Selection Guide</a></li>
+                            <li><a href="/resources/thermal-interface-materials.pdf">Thermal Interface Materials Guide</a></li>
+                            <li><a href="/resources/pcb-thermal-design.pdf">PCB Thermal Design Guidelines</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Thermal Simulation Tools</h3>
+                        <ul>
+                            <li><a href="/tools/thermal-calculator/">Online Thermal Calculator</a></li>
+                            <li><a href="/tools/heat-sink-selector/">Heat Sink Selector Tool</a></li>
+                            <li><a href="/tools/pcb-thermal-simulator/">PCB Thermal Simulator</a></li>
+                            <li><a href="/tools/cooling-method-analyzer/">Cooling Method Analyzer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="section-cta">
+                <div class="card text-center">
+                    <h3>Need Thermal Design Assistance?</h3>
+                    <p>Our thermal experts can help with detailed thermal analysis, heat sink selection, and cooling solution design for your specific application.</p>
+                    <div class="cta-buttons">
+                        <a href="/contact/" class="btn btn--primary">Contact Thermal Team</a>
+                        <a href="/contact/" class="btn btn--secondary" style="margin-left: var(--spacing-md);">Request Thermal Analysis</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/products/modular-power/">Modular Power</a></li>
+                        <li><a href="/products/input-filter/">Input Filter</a></li>
+                        <li><a href="/products/picor/">Picor Solutions</a></li>
+                        <li><a href="/solutions/data-center/">Data Center Solutions</a></li>
+                        <li><a href="/support/selection-guides/">Selection Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Sales Network</h3>
+                    <ul>
+                        <li><a href="/contact/#hong-kong">Hong Kong Headquarters</a></li>
+                        <li><a href="/contact/#beijing">Beijing Office</a></li>
+                        <li><a href="/contact/#shanghai">Shanghai Office</a></li>
+                        <li><a href="/contact/#shenzhen">Shenzhen Office</a></li>
+                        <li><a href="/contact/#usa">USA Office</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@elec-distributor.com</li>
+                        <li>WhatsApp: +86 15013702378</li>
+                        <li>WeChat: +86 18612518271</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service/">Terms of Service</a></li>
+                        <li><a href="/cookie-policy/">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> LiTong Group. All rights reserved. Official authorized Vicor distributor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+
+    <!-- Update current year in footer -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

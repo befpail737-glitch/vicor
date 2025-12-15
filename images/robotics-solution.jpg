@@ -1,0 +1,142 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <text x="400" y="80" font-family="Arial" font-size="32" text-anchor="middle" fill="#0072ce">Robotics Power Solutions</text>
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" fill="#6B7280">High-Efficiency Power for Mobile & Autonomous Systems</text>
+  
+  <!-- Robot body -->
+  <g>
+    <!-- Robot torso -->
+    <rect x="350" y="200" width="100" height="140" rx="20" fill="#e6f0ff" stroke="#0072ce" stroke-width="3"/>
+    
+    <!-- Robot head -->
+    <circle cx="400" cy="170" r="30" fill="#e6f0ff" stroke="#0072ce" stroke-width="3"/>
+    
+    <!-- Robot arms -->
+    <line x1="350" y1="230" x2="300" y2="250" stroke="#0072ce" stroke-width="8" stroke-linecap="round"/>
+    <line x1="450" y1="230" x2="500" y2="250" stroke="#0072ce" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Robot legs -->
+    <line x1="370" y1="340" x2="370" y2="400" stroke="#0072ce" stroke-width="8" stroke-linecap="round"/>
+    <line x1="430" y1="340" x2="430" y2="400" stroke="#0072ce" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Wheels/feet -->
+    <circle cx="370" cy="400" r="10" fill="#0072ce"/>
+    <circle cx="430" cy="400" r="10" fill="#0072ce"/>
+  </g>
+  
+  <!-- Motors and actuators -->
+  <g>
+    <!-- Shoulder motors -->
+    <rect x="340" y="210" width="15" height="15" fill="#f97316" rx="3"/>
+    <rect x="445" y="210" width="15" height="15" fill="#f97316" rx="3"/>
+    
+    <!-- Elbow joints -->
+    <circle cx="300" cy="250" r="10" fill="#f97316"/>
+    <circle cx="500" cy="250" r="10" fill="#f97316"/>
+    
+    <!-- Hip motors -->
+    <rect x="350" y="325" width="20" height="15" fill="#f97316" rx="3"/>
+    <rect x="430" y="325" width="20" height="15" fill="#f97316" rx="3"/>
+  </g>
+  
+  <!-- Power modules -->
+  <g>
+    <!-- Main power module -->
+    <rect x="360" y="140" width="80" height="30" rx="5" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <text x="400" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">BCM Module</text>
+    
+    <!-- Motor drive modules -->
+    <rect x="260" y="260" width="60" height="25" rx="5" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <text x="290" y="277" font-family="Arial" font-size="10" text-anchor="middle" fill="#0072ce">Motor Drive</text>
+    
+    <rect x="480" y="260" width="60" height="25" rx="5" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <text x="510" y="277" font-family="Arial" font-size="10" text-anchor="middle" fill="#0072ce">Motor Drive</text>
+    
+    <!-- Controller module -->
+    <rect x="380" y="420" width="40" height="30" rx="5" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <text x="400" y="440" font-family="Arial" font-size="10" text-anchor="middle" fill="#0072ce">Control</text>
+  </g>
+  
+  <!-- Power distribution -->
+  <g stroke="#f97316" stroke-width="2">
+    <!-- Main power line -->
+    <line x1="400" y1="170" x2="400" y2="200" stroke-dasharray="4,2"/>
+    <line x1="400" y1="340" x2="400" y2="390" stroke-dasharray="4,2"/>
+    
+    <!-- To left arm -->
+    <line x1="400" y1="230" x2="340" y2="250" stroke-dasharray="4,2"/>
+    <line x1="340" y1="250" x2="300" y2="250" stroke-dasharray="4,2"/>
+    
+    <!-- To right arm -->
+    <line x1="400" y1="230" x2="460" y2="250" stroke-dasharray="4,2"/>
+    <line x1="460" y1="250" x2="500" y2="250" stroke-dasharray="4,2"/>
+    
+    <!-- To motors -->
+    <line x1="360" y1="330" x2="360" y2="340"/>
+    <line x1="440" y1="330" x2="440" y2="340"/>
+  </g>
+  
+  <!-- Battery representation -->
+  <rect x="370" y="100" width="60" height="30" rx="5" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <rect x="375" y="105" width="8" height="20" fill="#f97316"/>
+  <rect x="388" y="105" width="8" height="20" fill="#f97316"/>
+  <rect x="401" y="105" width="8" height="20" fill="#f97316"/>
+  <rect x="414" y="105" width="8" height="20" fill="#f97316"/>
+  <text x="400" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#6B7280">Battery</text>
+  
+  <!-- Sensors -->
+  <circle cx="390" cy="170" r="5" fill="#10b981"/>
+  <circle cx="410" cy="170" r="5" fill="#10b981"/>
+  <rect x="390" y="185" width="20" height="10" fill="#10b981" rx="3"/>
+  
+  <!-- Mobile robot -->
+  <g transform="translate(100, 500)">
+    <rect x="0" y="0" width="120" height="60" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <circle cx="20" cy="60" r="10" fill="#0072ce"/>
+    <circle cx="50" cy="60" r="10" fill="#0072ce"/>
+    <circle cx="80" cy="60" r="10" fill="#0072ce"/>
+    <circle cx="110" cy="60" r="10" fill="#0072ce"/>
+    <text x="60" y="35" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Mobile</text>
+    <text x="60" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Robot</text>
+  </g>
+  
+  <!-- Industrial robot -->
+  <g transform="translate(300, 500)">
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <line x1="50" y1="0" x2="50" y2="-30" stroke="#0072ce" stroke-width="6"/>
+    <line x1="50" y1="-30" x2="70" y2="-50" stroke="#0072ce" stroke-width="6"/>
+    <line x1="70" y1="-50" x2="90" y2="-40" stroke="#0072ce" stroke-width="6"/>
+    <text x="50" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Industrial</text>
+    <text x="50" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Robot</text>
+  </g>
+  
+  <!-- Service robot -->
+  <g transform="translate(500, 500)">
+    <circle cx="30" cy="20" r="20" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <rect x="10" y="40" width="40" height="50" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <circle cx="20" cy="60" r="8" fill="#0072ce"/>
+    <circle cx="40" cy="60" r="8" fill="#0072ce"/>
+    <text x="30" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Service</text>
+    <text x="30" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Robot</text>
+  </g>
+  
+  <!-- Efficiency indicators -->
+  <g>
+    <rect x="600" y="200" width="150" height="40" fill="#e7f5e5" stroke="#10b981" stroke-width="2" rx="5"/>
+    <text x="675" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#065f46">High Efficiency</text>
+    <text x="675" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#065f46">Extends Battery Life</text>
+  </g>
+  
+  <g>
+    <rect x="600" y="280" width="150" height="40" fill="#e0f2fe" stroke="#0072ce" stroke-width="2" rx="5"/>
+    <text x="675" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#0072ce">High Density</text>
+    <text x="675" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Saves Space</text>
+  </g>
+  
+  <g>
+    <rect x="600" y="360" width="150" height="40" fill="#fffbeb" stroke="#f59e0b" stroke-width="2" rx="5"/>
+    <text x="675" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="#92400e">Fast Response</text>
+    <text x="675" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#92400e">Dynamic Loads</text>
+  </g>
+</svg>

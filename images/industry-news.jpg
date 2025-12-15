@@ -1,0 +1,115 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#f0f9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <text x="400" y="180" font-family="Arial" font-size="36" text-anchor="middle" fill="#0072ce">Industry Dynamics</text>
+  <text x="400" y="220" font-family="Arial" font-size="20" text-anchor="middle" fill="#6B7280">Power Electronics Industry Trends & Insights</text>
+  
+  <!-- Trending arrow -->
+  <g fill="#10b981">
+    <rect x="700" y="150" width="4" height="60" transform="rotate(45, 700, 150)"/>
+    <polygon points="695,145 705,145 700,135" transform="rotate(45, 700, 150)"/>
+  </g>
+  
+  <!-- Data visualization -->
+  <g stroke="#0072ce" stroke-width="3" fill="none">
+    <path d="M 100 400 Q 200 350 300 380 Q 400 300 500 330 Q 600 280 700 310"/>
+    
+    <!-- Data points -->
+    <circle cx="100" cy="400" r="6" fill="#0072ce"/>
+    <circle cx="200" cy="350" r="6" fill="#0072ce"/>
+    <circle cx="300" cy="380" r="6" fill="#0072ce"/>
+    <circle cx="400" cy="300" r="6" fill="#0072ce"/>
+    <circle cx="500" cy="330" r="6" fill="#0072ce"/>
+    <circle cx="600" cy="280" r="6" fill="#0072ce"/>
+    <circle cx="700" cy="310" r="6" fill="#0072ce"/>
+  </g>
+  
+  <!-- Technology icons -->
+  <g>
+    <!-- Server rack -->
+    <rect x="120" y="450" width="80" height="100" fill="white" stroke="#0072ce" stroke-width="2"/>
+    <rect x="130" y="460" width="60" height="12" fill="#e6f0ff"/>
+    <rect x="130" y="478" width="60" height="12" fill="#e6f0ff"/>
+    <rect x="130" y="496" width="60" height="12" fill="#e6f0ff"/>
+    <rect x="130" y="514" width="60" height="12" fill="#e6f0ff"/>
+    <text x="160" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Data Center</text>
+  </g>
+  
+  <g>
+    <!-- Car -->
+    <rect x="320" y="470" width="80" height="40" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <circle cx="340" cy="510" r="8" fill="#0072ce"/>
+    <circle cx="380" cy="510" r="8" fill="#0072ce"/>
+    <rect x="350" y="460" width="20" height="15" fill="#f97316"/>
+    <text x="360" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Automotive</text>
+  </g>
+  
+  <g>
+    <!-- Satellite -->
+    <circle cx="550" cy="480" r="15" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <rect x="540" y="475" width="20" height="10" fill="#f97316"/>
+    <line x1="550" y1="465" x2="550" y2="445" stroke="#0072ce" stroke-width="2"/>
+    <line x1="540" y1="450" x2="560" y2="450" stroke="#0072ce" stroke-width="2"/>
+    <text x="550" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Aerospace</text>
+  </g>
+  
+  <g>
+    <!-- Factory -->
+    <rect x="680" y="460" width="60" height="50" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <rect x="690" y="470" width="10" height="10" fill="#f97316"/>
+    <rect x="710" y="470" width="10" height="10" fill="#f97316"/>
+    <rect x="690" y="485" width="10" height="10" fill="#f97316"/>
+    <rect x="710" y="485" width="10" height="10" fill="#f97316"/>
+    <text x="710" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Industrial</text>
+  </g>
+  
+  <!-- Market growth indicator -->
+  <g>
+    <rect x="500" y="100" width="200" height="30" fill="white" stroke="#10b981" stroke-width="2" rx="5"/>
+    <rect x="500" y="100" width="160" height="30" fill="#d1fae5" rx="5"/>
+    <text x="600" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#065f46">Market Growth 25%</text>
+  </g>
+  
+  <!-- Innovation indicators -->
+  <g>
+    <circle cx="200" cy="120" r="25" fill="white" stroke="#f97316" stroke-width="2"/>
+    <path d="M 190 110 L 210 130 M 210 110 L 190 130" stroke="#f97316" stroke-width="4"/>
+    
+    <circle cx="300" cy="120" r="25" fill="white" stroke="#f97316" stroke-width="2"/>
+    <path d="M 290 115 Q 300 105 310 115 Q 300 125 290 115" stroke="#f97316" stroke-width="4" fill="#f97316"/>
+    
+    <circle cx="400" cy="120" r="25" fill="white" stroke="#f97316" stroke-width="2"/>
+    <path d="M 390 110 L 410 110 M 400 100 L 400 120" stroke="#f97316" stroke-width="4"/>
+  </g>
+  
+  <!-- Technology trends -->
+  <g>
+    <rect x="150" y="250" width="120" height="50" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="1"/>
+    <text x="210" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Higher</text>
+    <text x="210" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Efficiency</text>
+    
+    <rect x="300" y="250" width="120" height="50" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="1"/>
+    <text x="360" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Higher</text>
+    <text x="360" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Density</text>
+    
+    <rect x="450" y="250" width="120" height="50" rx="10" fill="#e6f0ff" stroke="#0072ce" stroke-width="1"/>
+    <text x="510" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Better</text>
+    <text x="510" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Thermal</text>
+  </g>
+  
+  <!-- News feed lines -->
+  <g stroke="#cbd5e1" stroke-width="1">
+    <line x1="100" y1="570" x2="700" y2="570"/>
+    <line x1="100" y1="580" x2="500" y2="580"/>
+    <line x1="100" y1="590" x2="600" y2="590"/>
+  </g>
+</svg>

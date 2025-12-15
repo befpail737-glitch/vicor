@@ -1,0 +1,211 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f0f9ff"/>
+  
+  <!-- Background pattern -->
+  <defs>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#bae6fd"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#dots)" opacity="0.5"/>
+  
+  <text x="400" y="80" font-family="Arial" font-size="32" text-anchor="middle" fill="#0072ce">Company News</text>
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" fill="#6B7280">Updates from LiTong Group</text>
+  
+  <!-- Main building representation -->
+  <g>
+    <!-- Building structure -->
+    <rect x="250" y="200" width="300" height="300" fill="#e6f0ff" stroke="#0072ce" stroke-width="3"/>
+    
+    <!-- Windows -->
+    <g fill="#bae6fd">
+      <rect x="270" y="220" width="20" height="20"/>
+      <rect x="300" y="220" width="20" height="20"/>
+      <rect x="330" y="220" width="20" height="20"/>
+      <rect x="360" y="220" width="20" height="20"/>
+      <rect x="390" y="220" width="20" height="20"/>
+      <rect x="420" y="220" width="20" height="20"/>
+      <rect x="450" y="220" width="20" height="20"/>
+      
+      <rect x="270" y="250" width="20" height="20"/>
+      <rect x="300" y="250" width="20" height="20"/>
+      <rect x="330" y="250" width="20" height="20"/>
+      <rect x="360" y="250" width="20" height="20"/>
+      <rect x="390" y="250" width="20" height="20"/>
+      <rect x="420" y="250" width="20" height="20"/>
+      <rect x="450" y="250" width="20" height="20"/>
+      
+      <rect x="270" y="280" width="20" height="20"/>
+      <rect x="300" y="280" width="20" height="20"/>
+      <rect x="330" y="280" width="20" height="20"/>
+      <rect x="360" y="280" width="20" height="20"/>
+      <rect x="390" y="280" width="20" height="20"/>
+      <rect x="420" y="280" width="20" height="20"/>
+      <rect x="450" y="280" width="20" height="20"/>
+      
+      <rect x="270" y="310" width="20" height="20"/>
+      <rect x="300" y="310" width="20" height="20"/>
+      <rect x="330" y="310" width="20" height="20"/>
+      <rect x="360" y="310" width="20" height="20"/>
+      <rect x="390" y="310" width="20" height="20"/>
+      <rect x="420" y="310" width="20" height="20"/>
+      <rect x="450" y="310" width="20" height="20"/>
+      
+      <rect x="270" y="340" width="20" height="20"/>
+      <rect x="300" y="340" width="20" height="20"/>
+      <rect x="330" y="340" width="20" height="20"/>
+      <rect x="360" y="340" width="20" height="20"/>
+      <rect x="390" y="340" width="20" height="20"/>
+      <rect x="420" y="340" width="20" height="20"/>
+      <rect x="450" y="340" width="20" height="20"/>
+      
+      <rect x="270" y="370" width="20" height="20"/>
+      <rect x="300" y="370" width="20" height="20"/>
+      <rect x="330" y="370" width="20" height="20"/>
+      <rect x="360" y="370" width="20" height="20"/>
+      <rect x="390" y="370" width="20" height="20"/>
+      <rect x="420" y="370" width="20" height="20"/>
+      <rect x="450" y="370" width="20" height="20"/>
+      
+      <rect x="270" y="400" width="20" height="20"/>
+      <rect x="300" y="400" width="20" height="20"/>
+      <rect x="330" y="400" width="20" height="20"/>
+      <rect x="360" y="400" width="20" height="20"/>
+      <rect x="390" y="400" width="20" height="20"/>
+      <rect x="420" y="400" width="20" height="20"/>
+      <rect x="450" y="400" width="20" height="20"/>
+    </g>
+    
+    <!-- Door -->
+    <rect x="375" y="440" width="50" height="60" fill="#0072ce" rx="5"/>
+    <circle cx="420" cy="470" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Company logo plaque -->
+  <g>
+    <rect x="270" y="170" width="260" height="30" fill="#0072ce" rx="5"/>
+    <text x="400" y="190" font-family="Arial" font-size="14" text-anchor="middle" fill="white">LiTong Group</text>
+  </g>
+  
+  <!-- People icons -->
+  <g>
+    <!-- Person 1 -->
+    <circle cx="150" cy="350" r="20" fill="#0072ce"/>
+    <rect x="135" y="370" width="30" height="40" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <line x1="135" y1="390" x2="165" y2="390" stroke="#0072ce" stroke-width="2"/>
+    
+    <!-- Person 2 -->
+    <circle cx="650" cy="350" r="20" fill="#0072ce"/>
+    <rect x="635" y="370" width="30" height="40" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <line x1="635" y1="390" x2="665" y2="390" stroke="#0072ce" stroke-width="2"/>
+    
+    <!-- Person 3 -->
+    <circle cx="150" cy="450" r="20" fill="#0072ce"/>
+    <rect x="135" y="470" width="30" height="40" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <line x1="135" y1="490" x2="165" y2="490" stroke="#0072ce" stroke-width="2"/>
+    
+    <!-- Person 4 -->
+    <circle cx="650" cy="450" r="20" fill="#0072ce"/>
+    <rect x="635" y="470" width="30" height="40" fill="#e6f0ff" stroke="#0072ce" stroke-width="2"/>
+    <line x1="635" y1="490" x2="665" y2="490" stroke="#0072ce" stroke-width="2"/>
+  </g>
+  
+  <!-- News elements -->
+  <g>
+    <!-- News paper 1 -->
+    <rect x="200" y="100" width="120" height="150" fill="white" stroke="#0072ce" stroke-width="2" rx="5"/>
+    <rect x="210" y="110" width="100" height="20" fill="#e6f0ff"/>
+    <rect x="210" y="140" width="80" height="10" fill="#cbd5e1"/>
+    <rect x="210" y="155" width="100" height="10" fill="#e2e8f0"/>
+    <rect x="210" y="170" width="70" height="10" fill="#e2e8f0"/>
+    <rect x="210" y="185" width="90" height="10" fill="#e2e8f0"/>
+    <rect x="210" y="200" width="60" height="10" fill="#e2e8f0"/>
+    <text x="260" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Expansion</text>
+    
+    <!-- News paper 2 -->
+    <rect x="500" y="100" width="120" height="150" fill="white" stroke="#0072ce" stroke-width="2" rx="5" transform="rotate(5, 560, 175)"/>
+    <rect x="510" y="110" width="100" height="20" fill="#e6f0ff"/>
+    <rect x="510" y="140" width="80" height="10" fill="#cbd5e1"/>
+    <rect x="510" y="155" width="100" height="10" fill="#e2e8f0"/>
+    <rect x="510" y="170" width="70" height="10" fill="#e2e8f0"/>
+    <rect x="510" y="185" width="90" height="10" fill="#e2e8f0"/>
+    <text x="560" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">New Staff</text>
+    
+    <!-- News paper 3 -->
+    <rect x="350" y="50" width="100" height="120" fill="white" stroke="#0072ce" stroke-width="2" rx="5" transform="rotate(-5, 400, 110)"/>
+    <rect x="360" y="60" width="80" height="15" fill="#e6f0ff"/>
+    <rect x="360" y="85" width="60" height="8" fill="#cbd5e1"/>
+    <rect x="360" y="98" width="80" height="8" fill="#e2e8f0"/>
+    <rect x="360" y="111" width="50" height="8" fill="#e2e8f0"/>
+    <rect x="360" y="124" width="70" height="8" fill="#e2e8f0"/>
+    <text x="400" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Achievement</text>
+  </g>
+  
+  <!-- Communication elements -->
+  <g>
+    <!-- Speech bubbles -->
+    <path d="M 120 300 Q 140 290 160 300 Q 160 320 140 325 Q 120 320 120 300 Z" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    <path d="M 680 300 Q 700 290 720 300 Q 720 320 700 325 Q 680 320 680 300 Z" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    <path d="M 120 400 Q 140 390 160 400 Q 160 420 140 425 Q 120 420 120 400 Z" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    <path d="M 680 400 Q 700 390 720 400 Q 720 420 700 425 Q 680 420 680 400 Z" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    
+    <!-- Chat bubbles -->
+    <rect x="220" y="500" width="80" height="50" rx="10" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    <rect x="320" y="510" width="60" height="40" rx="8" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    <rect x="400" y="500" width="90" height="50" rx="10" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    <rect x="510" y="510" width="70" height="40" rx="8" fill="#e0f2fe" stroke="#0072ce" stroke-width="2"/>
+    
+    <text x="260" y="530" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Team</text>
+    <text x="260" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Update</text>
+    
+    <text x="350" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">News</text>
+    
+    <text x="445" y="530" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Project</text>
+    <text x="445" y="545" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Status</text>
+    
+    <text x="545" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#0072ce">Growth</text>
+  </g>
+  
+  <!-- Growth indicators -->
+  <g>
+    <!-- Growth chart -->
+    <rect x="580" y="200" width="150" height="100" fill="white" stroke="#0072ce" stroke-width="2" rx="5"/>
+    <polyline points="590,280 610,260 630,270 650,240 670,250" fill="none" stroke="#10b981" stroke-width="4"/>
+    <circle cx="590" cy="280" r="4" fill="#10b981"/>
+    <circle cx="610" cy="260" r="4" fill="#10b981"/>
+    <circle cx="630" cy="270" r="4" fill="#10b981"/>
+    <circle cx="650" cy="240" r="4" fill="#10b981"/>
+    <circle cx="670" cy="250" r="4" fill="#10b981"/>
+    <text x="655" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#0072ce">Growth</text>
+    <text x="655" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="#0072ce">+35%</text>
+  </g>
+  
+  <!-- Success elements -->
+  <g>
+    <!-- Award/recognition -->
+    <circle cx="100" y="100" r="40" fill="white" stroke="#f59e0b" stroke-width="3"/>
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#f59e0b" stroke-width="3"/>
+    <star cx="100" cy="100" r="15" points="5" fill="#f59e0b" />
+    <text x="100" y="150" font-family="Arial" font-size="14" text-anchor="middle" fill="#f59e0b">Award</text>
+    
+    <!-- Certificate -->
+    <rect x="650" y="70" width="60" height="70" fill="white" stroke="#10b981" stroke-width="2" rx="5"/>
+    <circle cx="680" cy="90" r="8" fill="#10b981"/>
+    <path d="M 670 100 L 690 120 M 690 100 L 670 120" stroke="#10b981" stroke-width="3"/>
+    <text x="680" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#10b981">Certified</text>
+  </g>
+  
+  <!-- Communication arrows -->
+  <g stroke="#0072ce" stroke-width="2" fill="none">
+    <line x1="200" y1="350" x2="250" y2="350" marker-end="url(#arrowhead)"/>
+    <line x1="550" y1="350" x2="600" y2="350" marker-end="url(#arrowhead)"/>
+    <line x1="200" y1="450" x2="250" y2="450" marker-end="url(#arrowhead)"/>
+    <line x1="550" y1="450" x2="600" y2="450" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0072ce" />
+    </marker>
+  </defs>
+</svg>

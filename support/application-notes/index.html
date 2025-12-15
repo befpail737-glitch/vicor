@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicor Application Notes - Technical Implementation Guides - LiTong Distributor</title>
+    <meta name="description" content="Vicor application notes with technical implementation guides, design examples, and practical recommendations for Vicor products.">
+    <meta name="keywords" content="Vicor application notes, power design guides, Vicor implementation guides, power conversion applications, technical application notes">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Vicor Application Notes - Technical Implementation Guides">
+    <meta property="og:description" content="Vicor application notes with technical implementation guides, design examples, and practical recommendations for Vicor products.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vicor.elec-distributor.com/support/application-notes/">
+    <meta property="og:image" content="https://vicor.elec-distributor.com/images/application-note.jpg">
+
+    <!-- Schema Markup for Support Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Vicor Application Notes",
+        "description": "Technical implementation guides and application notes for Vicor products",
+        "about": "Vicor Application Notes",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://vicor.elec-distributor.com/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Support",
+                "item": "https://vicor.elec-distributor.com/support/"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Application Notes",
+                "item": "https://vicor.elec-distributor.com/support/application-notes/"
+            }]
+        }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-top">
+                <a href="/" class="logo" aria-label="LiTong Vicor Distributor Home">
+                    <img src="/images/logo.svg" alt="LiTong Vicor Distributor Logo" width="180" height="50">
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="/products/" class="nav-link">Products <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/products/modular-power/" class="dropdown-link">Modular Power</a></li>
+                            <li><a href="/products/input-filter/" class="dropdown-link">Input Filter</a></li>
+                            <li><a href="/products/picor/" class="dropdown-link">Picor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/solutions/" class="nav-link">Solutions <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/solutions/data-center/" class="dropdown-link">Data Center</a></li>
+                            <li><a href="/solutions/aerospace/" class="dropdown-link">Aerospace</a></li>
+                            <li><a href="/solutions/robotics/" class="dropdown-link">Robotics</a></li>
+                            <li><a href="/solutions/rail/" class="dropdown-link">Rail</a></li>
+                            <li><a href="/solutions/automotive/" class="dropdown-link">Automotive</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a href="/support/" class="nav-link active">Support <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/support/selection-guides/" class="dropdown-link">Selection Guides</a></li>
+                            <li><a href="/support/application-notes/" class="dropdown-link active">Application Notes</a></li>
+                            <li><a href="/support/thermal-design/" class="dropdown-link">Thermal Design</a></li>
+                            <li><a href="/support/packaging-technology/" class="dropdown-link">Packaging Technology</a></li>
+                            <li><a href="/support/faq/" class="dropdown-link">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/news/" class="nav-link">News <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/news/industry-dynamics/" class="dropdown-link">Industry Dynamics</a></li>
+                            <li><a href="/news/company-news/" class="dropdown-link">Company News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/contact/" class="nav-link cta-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Floating Contact Bar -->
+        <div class="floating-contact" aria-label="Contact information">
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span>WhatsApp: +86 15013702378</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">💬</span>
+                <span>WeChat: +86 18612518271</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="/support/">Support</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="current-page">Application Notes</span>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-content" role="main">
+        <div class="container">
+            <header class="page-header">
+                <h1>Vicor Application Notes</h1>
+                <p class="page-description">
+                    Technical implementation guides with practical examples and design recommendations for Vicor products.
+                    Our application notes provide detailed information on how to effectively implement Vicor solutions in your designs.
+                </p>
+            </header>
+
+            <!-- Introduction Content -->
+            <section class="section-intro mb-xl">
+                <h2>Technical Implementation Resources</h2>
+                <p>
+                    Vicor application notes provide in-depth technical guidance for implementing Vicor power solutions in real-world applications.
+                    These documents provide practical examples, design procedures, and recommendations that go beyond basic specifications
+                    to help you successfully implement Vicor products in your designs.
+                </p>
+                <p>
+                    Our application notes cover implementation techniques, design considerations, and best practices developed through
+                    years of experience and collaboration with customers across various industries.
+                </p>
+            </section>
+
+            <!-- Application Notes Categories -->
+            <section class="section-categories mb-xl">
+                <h2>Application Notes by Category</h2>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3>DCM Implementation</h3>
+                        <p>
+                            Application notes covering the implementation of DCM (DC-DC Converter Module) products including circuit design,
+                            layout recommendations, and performance optimization techniques.
+                        </p>
+                        <ul>
+                            <li>DCM basic implementation</li>
+                            <li>Paralleling DCM modules</li>
+                            <li>DCM in 48V systems</li>
+                            <li>EMI considerations for DCMs</li>
+                        </ul>
+                        <a href="/support/application-notes/dcm/" class="btn btn--ghost">Browse Notes</a>
+                    </div>
+                    <div class="card">
+                        <h3>BCM Implementation</h3>
+                        <p>
+                            Application notes for implementing BCM (Bus Converter Module) products, including current sharing,
+                            thermal design, and integration with downstream converters.
+                        </p>
+                        <ul>
+                            <li>BCM basic implementation</li>
+                            <li>BCM in FPA systems</li>
+                            <li>Thermal design for BCMs</li>
+                            <li>Paralleling BCM modules</li>
+                        </ul>
+                        <a href="/support/application-notes/bcm/" class="btn btn--ghost">Browse Notes</a>
+                    </div>
+                    <div class="card">
+                        <h3>FPA Implementation</h3>
+                        <p>
+                            Application notes for Factorized Power Architecture (FPA) using PRM and VTM modules,
+                            including design procedures and optimization techniques.
+                        </p>
+                        <ul>
+                            <li>FPA design fundamentals</li>
+                            <li>PRM+VTM system design</li>
+                            <li>Control loop considerations</li>
+                            <li>FPA in computing systems</li>
+                        </ul>
+                        <a href="/support/application-notes/fpa/" class="btn btn--ghost">Browse Notes</a>
+                    </div>
+                    <div class="card">
+                        <h3>System Design</h3>
+                        <p>
+                            Application notes covering complete power system design including architecture selection,
+                            component interaction, and system-level optimization.
+                        </p>
+                        <ul>
+                            <li>Power architecture selection</li>
+                            <li>System efficiency optimization</li>
+                            <li>Thermal management strategies</li>
+                            <li>EMI/EMC design</li>
+                        </ul>
+                        <a href="/support/application-notes/system-design/" class="btn btn--ghost">Browse Notes</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Application Notes -->
+            <section class="section-featured mb-xl">
+                <h2>Featured Application Notes</h2>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3>AN-2001: DCM Implementation in 48V Systems</h3>
+                        <p class="meta">Application Note • 18 min read</p>
+                        <p>
+                            Detailed guidance on implementing DCM modules in 48V power delivery systems, including design trade-offs,
+                            efficiency optimization, and thermal considerations.
+                        </p>
+                        <a href="/support/application-notes/dcm-48v-implementation/" class="btn btn--ghost">Read Note</a>
+                        <a href="/resources/an-2001-dcm-48v-implementation.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
+                    </div>
+                    <div class="card">
+                        <h3>AN-2015: Factorized Power Architecture Design</h3>
+                        <p class="meta">Application Note • 22 min read</p>
+                        <p>
+                            Comprehensive guide to designing systems with Factorized Power Architecture using PRM and VTM modules,
+                            including loop stability and efficiency considerations.
+                        </p>
+                        <a href="/support/application-notes/fpa-design-guide/" class="btn btn--ghost">Read Note</a>
+                        <a href="/resources/an-2015-fpa-design-guide.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
+                    </div>
+                    <div class="card">
+                        <h3>AN-2023: BCM Current Sharing Techniques</h3>
+                        <p class="meta">Application Note • 15 min read</p>
+                        <p>
+                            Implementation guide for paralleling BCM modules for high-current applications, including design
+                            techniques and performance validation.
+                        </p>
+                        <a href="/support/application-notes/bcm-current-sharing/" class="btn btn--ghost">Read Note</a>
+                        <a href="/resources/an-2023-bcm-current-sharing.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
+                    </div>
+                    <div class="card">
+                        <h3>AN-2031: EMI Design for High-Density Power Systems</h3>
+                        <p class="meta">Application Note • 25 min read</p>
+                        <p>
+                            Practical techniques for minimizing EMI in high-density power systems using Vicor products,
+                            including layout recommendations and filtering strategies.
+                        </p>
+                        <a href="/support/application-notes/emi-design/" class="btn btn--ghost">Read Note</a>
+                        <a href="/resources/an-2031-emi-design.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Examples -->
+            <section class="section-examples mb-xl">
+                <h2>Design Examples and Reference Designs</h2>
+                <div class="card">
+                    <h3>48V to 12V Power Delivery</h3>
+                    <p>
+                        Complete design example for 48V to 12V power delivery using various Vicor architectures:
+                    </p>
+                    <ul>
+                        <li>DCM + Point of Load (POL) approach</li>
+                        <li>BCM + POL approach</li>
+                        <li>Factorized Power Architecture (PRM+VTM) approach</li>
+                        <li>Performance comparison and selection criteria</li>
+                    </ul>
+                    
+                    <h3>High-Current Low-Voltage Applications</h3>
+                    <p>
+                        Design example for high-current, low-voltage applications (e.g., processor power):
+                    </p>
+                    <ul>
+                        <li>VTM-based current multiplication</li>
+                        <li>Layout considerations for high-frequency, high-current designs</li>
+                        <li>Thermal design for maximum efficiency</li>
+                        <li>Control loop stability considerations</li>
+                    </ul>
+                    
+                    <h3>Isolated Power Systems</h3>
+                    <p>
+                        Implementation example for applications requiring isolation:
+                    </p>
+                    <ul>
+                        <li>DCM for isolated bus conversion</li>
+                        <li>VTM for isolated current multiplication</li>
+                        <li>Isolation requirements and safety considerations</li>
+                        <li>EMI considerations for isolated systems</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Engineer's Perspective -->
+            <section class="section-engineer-perspective mb-xl">
+                <h2>FAE Perspective: Common Implementation Challenges</h2>
+                <div class="card">
+                    <h3>Layout and Grounding</h3>
+                    <p>
+                        Proper PCB layout is critical for high-frequency, high-efficiency converters. Common challenges include:
+                    </p>
+                    <ul>
+                        <li>Minimizing high-frequency noise coupling</li>
+                        <li>Creating proper ground planes for high-frequency return paths</li>
+                        <li>Managing thermal performance through copper distribution</li>
+                        <li>Minimizing parasitic inductance in high-current paths</li>
+                    </ul>
+                    
+                    <h3>Input and Output Filtering</h3>
+                    <p>
+                        While Vicor modules have excellent EMI performance, proper input and output filtering is often required:
+                    </p>
+                    <ul>
+                        <li>Input filtering for EMI compliance</li>
+                        <li>Output filtering for ripple requirements</li>
+                        <li>Interaction with downstream converters</li>
+                        <li>Impact on stability in FPA systems</li>
+                    </ul>
+                    
+                    <h3>Thermal Management</h3>
+                    <p>
+                        Despite high efficiency, thermal design is still important for reliability and performance:
+                    </p>
+                    <ul>
+                        <li>Heat transfer from modules to PCB</li>
+                        <li>Impact of temperature on component specifications</li>
+                        <li>Forced vs. natural convection</li>
+                        <li>Thermal interaction between multiple modules</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Tools and Resources -->
+            <section class="section-resources mb-xl">
+                <h2>Implementation Tools and Resources</h2>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3>Design Tools</h3>
+                        <ul>
+                            <li><a href="/tools/power-system-designer/">Power System Designer</a></li>
+                            <li><a href="/tools/thermal-calculator/">Thermal Calculator</a></li>
+                            <li><a href="/tools/efficiency-estimator/">Efficiency Estimator</a></li>
+                            <li><a href="/tools/emi-analyzer/">EMI Analyzer</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Additional Resources</h3>
+                        <ul>
+                            <li><a href="/support/selection-guides/">Selection Guides</a></li>
+                            <li><a href="/support/thermal-design/">Thermal Design Resources</a></li>
+                            <li><a href="/support/packaging-technology/">Packaging Technology Info</a></li>
+                            <li><a href="/support/faq/">Frequently Asked Questions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="section-cta">
+                <div class="card text-center">
+                    <h3>Need Implementation Support?</h3>
+                    <p>Our FAE team can help with implementation challenges, design reviews, and custom solutions. Contact us for specialized application support.</p>
+                    <div class="cta-buttons">
+                        <a href="/contact/" class="btn btn--primary">Contact FAE Team</a>
+                        <a href="/contact/" class="btn btn--secondary" style="margin-left: var(--spacing-md);">Request Design Review</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/products/modular-power/">Modular Power</a></li>
+                        <li><a href="/products/input-filter/">Input Filter</a></li>
+                        <li><a href="/products/picor/">Picor Solutions</a></li>
+                        <li><a href="/solutions/data-center/">Data Center Solutions</a></li>
+                        <li><a href="/support/selection-guides/">Selection Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Sales Network</h3>
+                    <ul>
+                        <li><a href="/contact/#hong-kong">Hong Kong Headquarters</a></li>
+                        <li><a href="/contact/#beijing">Beijing Office</a></li>
+                        <li><a href="/contact/#shanghai">Shanghai Office</a></li>
+                        <li><a href="/contact/#shenzhen">Shenzhen Office</a></li>
+                        <li><a href="/contact/#usa">USA Office</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@elec-distributor.com</li>
+                        <li>WhatsApp: +86 15013702378</li>
+                        <li>WeChat: +86 18612518271</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service/">Terms of Service</a></li>
+                        <li><a href="/cookie-policy/">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> LiTong Group. All rights reserved. Official authorized Vicor distributor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+
+    <!-- Update current year in footer -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
