@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicor FAQ - Frequently Asked Questions - LiTong Distributor</title>
-    <meta name="description" content="Frequently asked questions about Vicor power modules, applications, technical support, and implementation. Answers to common Vicor product questions.">
-    <meta name="keywords" content="Vicor FAQ, Vicor frequently asked questions, power module questions, Vicor technical support, Vicor application questions">
+    <title>Frequently Asked Questions - Power System Solutions - LiTong Distributor</title>
+    <meta name="description" content="Frequently asked questions about Vicor power modules, power system design, packaging technologies, and application-specific solutions.">
+    <meta name="keywords" content="FAQ, frequently asked questions, power modules, Vicor solutions, power system design, packaging technology">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Vicor FAQ - Frequently Asked Questions">
-    <meta property="og:description" content="Frequently asked questions about Vicor power modules, applications, technical support, and implementation. Answers to common Vicor product questions.">
+    <meta property="og:title" content="Frequently Asked Questions - Power System Solutions">
+    <meta property="og:description" content="Frequently asked questions about Vicor power modules, power system design, packaging technologies, and application-specific solutions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vicor.elec-distributor.com/support/faq/">
     <meta property="og:image" content="https://vicor.elec-distributor.com/images/faq.jpg">
 
-    <!-- Schema Markup for Support Page -->
+    <!-- Schema Markup for Support Article -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "name": "Vicor Frequently Asked Questions",
-        "description": "Answers to common questions about Vicor products and applications",
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://vicor.elec-distributor.com/"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Support",
-                "item": "https://vicor.elec-distributor.com/support/"
-            }, {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "FAQ",
-                "item": "https://vicor.elec-distributor.com/support/faq/"
-            }]
+        "headline": "Frequently Asked Questions - Power System Solutions",
+        "description": "Frequently asked questions about Vicor power modules and power system design",
+        "author": {
+            "@type": "Organization",
+            "name": "LiTong Group",
+            "url": "https://vicor.elec-distributor.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "LiTong Group",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://vicor.elec-distributor.com/images/logo.svg"
+            }
+        },
+        "datePublished": "2025-01-01",
+        "image": "https://vicor.elec-distributor.com/images/faq.jpg",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://vicor.elec-distributor.com/support/faq/"
         }
     }
     </script>
@@ -130,309 +130,259 @@
             <span class="breadcrumb-separator">/</span>
             <a href="/support/">Support</a>
             <span class="breadcrumb-separator">/</span>
-            <span class="current-page">FAQ</span>
+            <a href="/support/faq/">FAQ</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="current-page">Frequently Asked Questions</span>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main class="main-content" id="main-content" role="main">
         <div class="container">
-            <header class="page-header">
-                <h1>Vicor Frequently Asked Questions</h1>
-                <p class="page-description">
-                    Answers to frequently asked questions about Vicor power modules, applications, technical support, and implementation.
-                    Find quick answers to common questions about our products and solutions.
-                </p>
-            </header>
-
-            <!-- Introduction Content -->
-            <section class="section-intro mb-xl">
-                <h2>Common Questions About Vicor Solutions</h2>
-                <p>
-                    This FAQ section addresses the most common questions our customers have about Vicor power solutions.
-                    If you don't find the answer to your question here, please contact our technical support team for specialized assistance.
-                </p>
-                <p>
-                    Questions are organized by topic to help you find the information you need quickly. For technical questions
-                    related to specific applications, please see our Application Notes and Selection Guides sections.
-                </p>
-            </section>
-
-            <!-- FAQ Categories -->
-            <section class="section-categories mb-xl">
-                <h2>FAQ Categories</h2>
-                <div class="grid grid--3">
-                    <a href="#product-faq" class="card-link">
-                        <div class="card">
-                            <h3>Product Questions</h3>
-                            <p>Questions about Vicor products, specifications, and features</p>
-                        </div>
-                    </a>
-                    <a href="#application-faq" class="card-link">
-                        <div class="card">
-                            <h3>Application Questions</h3>
-                            <p>Questions about implementing Vicor solutions in your designs</p>
-                        </div>
-                    </a>
-                    <a href="#technical-faq" class="card-link">
-                        <div class="card">
-                            <h3>Technical Questions</h3>
-                            <p>Questions about performance, thermal, and EMI considerations</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Product FAQ -->
-            <section class="section-faq mb-xl" id="product-faq">
-                <h2>Product Questions</h2>
-                <div class="card">
-                    <details class="faq-item">
-                        <summary>What is the difference between DCM, BCM, PRM, and VTM modules?</summary>
-                        <div class="faq-answer">
-                            <p><strong>DCM (DC-DC Converter Module):</strong> Fixed-ratio, isolated converter without regulation. Ideal for bus conversion where downstream converters handle regulation.</p>
-                            <p><strong>BCM (Bus Converter Module):</strong> Non-isolated, fixed-ratio converter with current multiplication. Maintains dynamic response of downstream converters.</p>
-                            <p><strong>PRM (Predictable Regulated Bus Converter):</strong> Regulated converter designed to work with VTMs in Factorized Power Architecture (FPA).</p>
-                            <p><strong>VTM (Vicor Transformer Module):</strong> Current multiplication device with isolation. Works with PRMs in FPA systems.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>What is Factorized Power Architecture (FPA)?</summary>
-                        <div class="faq-answer">
-                            <p>Factorized Power Architecture separates voltage regulation from current multiplication using PRM (regulation) and VTM (current multiplication) modules. This approach enables:</p>
-                            <ul>
-                                <li>Optimal efficiency for both functions</li>
-                                <li>Enhanced power density</li>
-                                <li>Improved thermal management</li>
-                                <li>Better dynamic response</li>
-                            </ul>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>What is the difference between ChiP and VIA packaging?</summary>
-                        <div class="faq-answer">
-                            <p><strong>ChiP (Converter housed in Package):</strong> Complete power converter in a surface-mount package with minimal external components. Offers ultimate power density.</p>
-                            <p><strong>VIA (Vertical Integration Architecture):</strong> Vertical mounting with high pin count for superior thermal performance and high power capability.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>How do I determine if I need isolation in my application?</summary>
-                        <div class="faq-answer">
-                            <p>You typically need isolation if you have:</p>
-                            <ul>
-                                <li>Safety requirements (medical, industrial equipment)</li>
-                                <li>Ground loop concerns</li>
-                                <li>Different ground potentials</li>
-                                <li>Protection requirements between power domains</li>
-                            </ul>
-                            <p>DCMs and VTMs provide galvanic isolation (2250Vdc typical), while BCMs are non-isolated.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>What input voltage ranges do Vicor modules support?</summary>
-                        <div class="faq-answer">
-                            <p>Vicor modules support various input voltage ranges depending on the specific model:</p>
-                            <ul>
-                                <li>BCM modules: typically 36-75V, 24-55V, 48-150V</li>
-                                <li>DCM modules: typically 24-55V, 36-75V, 48-150V</li>
-                                <li>PRM modules: typically 24-55V, 36-75V</li>
-                                <li>VTM modules: input range varies with turns ratio</li>
-                            </ul>
-                            <p>Always check the specific model's datasheet for exact specifications.</p>
-                        </div>
-                    </details>
-                </div>
-            </section>
-
-            <!-- Application FAQ -->
-            <section class="section-faq mb-xl" id="application-faq">
-                <h2>Application Questions</h2>
-                <div class="card">
-                    <details class="faq-item">
-                        <summary>How do I choose between DCM and BCM for my 48V system?</summary>
-                        <div class="faq-answer">
-                            <p>Choose a DCM if you need:</p>
-                            <ul>
-                                <li>Galvanic isolation between input and output</li>
-                                <li>Fixed-ratio conversion without regulation</li>
-                                <li>Isolated power for safety systems</li>
-                            </ul>
-                            <p>Choose a BCM if you need:</p>
-                            <ul>
-                                <li>Non-isolated current multiplication</li>
-                                <li>Preservation of downstream converter dynamic response</li>
-                                <li>High efficiency without isolation requirement</li>
-                            </ul>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>Can I parallel Vicor modules for higher power?</summary>
-                        <div class="faq-answer">
-                            <p>Yes, many Vicor modules can be paralleled for higher power applications:</p>
-                            <ul>
-                                <li>DCM modules can be paralleled with proper current sharing design</li>
-                                <li>BCM modules have natural current sharing characteristics</li>
-                                <li>VTM modules can be paralleled in FPA configurations</li>
-                            </ul>
-                            <p>Follow application notes for specific paralleling techniques and design guidelines.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>How do I implement thermal management for Vicor modules?</summary>
-                        <div class="faq-answer">
-                            <p>Thermal management depends on the module type and application:</p>
-                            <ul>
-                                <li>Ensure adequate PCB copper for heat spreading</li>
-                                <li>Use proper thermal vias for vertical heat transfer</li>
-                                <li>Consider heat sinks for high-power applications</li>
-                                <li>Design for worst-case ambient conditions</li>
-                            </ul>
-                            <p>Refer to our Thermal Design section for detailed guidelines.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>What external components do I need with Vicor modules?</summary>
-                        <div class="faq-answer">
-                            <p>Requirements vary by module type:</p>
-                            <ul>
-                                <li><strong>DCM/BCM/PRM/VTM:</strong> Generally require input and output capacitors</li>
-                                <li><strong>ChiP modules:</strong> Minimal external components due to integration</li>
-                                <li><strong>Input filtering:</strong> May be required for EMI compliance</li>
-                                <li><strong>Output filtering:</strong> May be required for ripple requirements</li>
-                            </ul>
-                            <p>Specific requirements are detailed in each module's application note.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>How do I use PRM and VTM together in FPA?</summary>
-                        <div class="faq-answer">
-                            <p>In Factorized Power Architecture:</p>
-                            <ol>
-                                <li>PRM provides regulated voltage to the input of the VTM</li>
-                                <li>VTM provides current multiplication and voltage transformation</li>
-                                <li>The PRM handles voltage regulation, VTM handles current delivery</li>
-                                <li>This separation allows optimization of each function</li>
-                            </ol>
-                            <p>This approach provides high efficiency and power density for demanding applications.</p>
-                        </div>
-                    </details>
-                </div>
-            </section>
-
-            <!-- Technical FAQ -->
-            <section class="section-faq mb-xl" id="technical-faq">
-                <h2>Technical Questions</h2>
-                <div class="card">
-                    <details class="faq-item">
-                        <summary>How efficient are Vicor modules?</summary>
-                        <div class="faq-answer">
-                            <p>Efficiency varies by module type and operating conditions:</p>
-                            <ul>
-                                <li><strong>DCM modules:</strong> Up to 96% efficiency</li>
-                                <li><strong>BCM modules:</strong> Up to 97% efficiency</li>
-                                <li><strong>PRM modules:</strong> Up to 95% efficiency</li>
-                                <li><strong>VTM modules:</strong> Up to 98% efficiency</li>
-                            </ul>
-                            <p>Efficiency remains high across wide load ranges due to ZVS technology.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>How do Vicor modules handle EMI/EMC requirements?</summary>
-                        <div class="faq-answer">
-                            <p>Vicor modules have excellent EMI performance due to ZVS technology and optimized design:</p>
-                            <ul>
-                                <li>Zero Voltage Switching reduces high-frequency switching noise</li>
-                                <li>Complementary power flow minimizes ripple current</li>
-                                <li>ChiP packaging reduces EMI through enclosed design</li>
-                                <li>May require additional input/output filtering for compliance</li>
-                            </ul>
-                            <p>Refer to our Application Notes for EMI design guidance.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>What protection features do Vicor modules have?</summary>
-                        <div class="faq-answer">
-                            <p>Protection features vary by module type but typically include:</p>
-                            <ul>
-                                <li>Over-temperature protection</li>
-                                <li>Input over-voltage protection</li>
-                                <li>Output over-current protection</li>
-                                <li>Short circuit protection</li>
-                            </ul>
-                            <p>Specific protection features are detailed in each module's datasheet.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>How do Vicor modules handle load transients?</summary>
-                        <div class="faq-answer">
-                            <p>Dynamic response characteristics vary by module type:</p>
-                            <ul>
-                                <li><strong>BCM modules:</strong> Preserve downstream converter response for fast transients</li>
-                                <li><strong>DCM modules:</strong> Fast response since no regulation loop</li>
-                                <li><strong>PRM modules:</strong> Regulated response with defined bandwidth</li>
-                                <li><strong>VTM modules:</strong> Fast response due to current multiplication nature</li>
-                            </ul>
-                            <p>System-level response depends on the load characteristics and output capacitance.</p>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary>What is the typical lifetime of Vicor modules?</summary>
-                        <div class="faq-answer">
-                            <p>Vicor modules are designed for long-term reliability:</p>
-                            <ul>
-                                <li>Mean Time To Failure (MTTF) typically exceeds 100,000 hours</li>
-                                <li>Designed for 20+ year operational life in typical applications</li>
-                                <li>Components selected for long-term reliability</li>
-                                <li>Derating applied to ensure robust operation</li>
-                            </ul>
-                            <p>Reliability data is available in the product datasheets and reliability reports.</p>
-                        </div>
-                    </details>
-                </div>
-            </section>
-
-            <!-- Contact for Additional Questions -->
-            <section class="section-contact mb-xl">
-                <div class="card text-center">
-                    <h2>Didn't Find Your Answer?</h2>
-                    <p>If your question isn't addressed in our FAQ, our technical support team is ready to help with your specific application requirements.</p>
-                    <a href="/contact/" class="btn btn--primary">Contact Technical Support</a>
-                </div>
-            </section>
-
-            <!-- Related Resources -->
-            <section class="section-resources mb-xl">
-                <h2>Related Support Resources</h2>
-                <div class="grid grid--3">
-                    <div class="card">
-                        <h3>Selection Guides</h3>
-                        <p>Resources to help you choose the right Vicor solution for your application.</p>
-                        <a href="/support/selection-guides/" class="btn btn--ghost">View Guides</a>
+            <article>
+                <header class="article-header">
+                    <h1>Frequently Asked Questions - Power System Solutions</h1>
+                    <div class="article-meta">
+                        <span class="meta-item">FAQ</span>
+                        <span class="meta-separator">•</span>
+                        <time datetime="2025-01-01">January 1, 2025</time>
+                        <span class="meta-separator">•</span>
+                        <span class="meta-item">Support Resource</span>
                     </div>
+                </header>
+
+                <div class="article-content">
+                    <p class="article-lead">
+                        These frequently asked questions address common concerns about Vicor power modules, system design, packaging technologies, and application-specific considerations.
+                        For additional questions, please contact our FAE support team.
+                    </p>
+
+                    <h2>General Product Questions</h2>
                     <div class="card">
-                        <h3>Application Notes</h3>
-                        <p>Technical implementation guides with practical examples and design recommendations.</p>
-                        <a href="/support/application-notes/" class="btn btn--ghost">View Notes</a>
+                        <details class="faq-item">
+                            <summary>What is the difference between DCM, BCM, PRM, and VTM?</summary>
+                            <div class="faq-answer">
+                                <p><strong>DCM (DC-DC Converter Module):</strong> Fixed-ratio, isolated converter without regulation. Ideal for bus conversion with galvanic isolation.</p>
+                                <p><strong>BCM (Bus Converter Module):</strong> Current multiplication with galvanic isolation. Used for applications requiring current multiplication with voltage transformation.</p>
+                                <p><strong>PRM (Propensity Regulated Module):</strong> Regulated bus converter providing precise voltage regulation with high efficiency.</p>
+                                <p><strong>VTM (Vicor Transformer Module):</strong> Current multiplication transformer used in Factorized Power Architecture (FPA) with PRM. Provides current multiplication with galvanic isolation while preserving dynamic response.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What is Factorized Power Architecture (FPA)?</summary>
+                            <div class="faq-answer">
+                                <p>Factorized Power Architecture separates voltage transformation and regulation functions using a PRM (regulator) and VTM (current multiplier). The PRM provides precise regulation and the VTM provides current multiplication with voltage transformation while preserving the dynamic response of the power delivery network. This enables high-current, fast-transient power delivery with galvanic isolation.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What are the advantages of zero voltage switching (ZVS)?</summary>
+                            <div class="faq-answer">
+                                <p>Zero Voltage Switching (ZVS) technology significantly reduces switching losses by turning transistors on and off when the voltage across them is zero. This results in higher efficiency, lower electromagnetic interference (EMI), and reduced thermal dissipation. ZVS is particularly beneficial at higher frequencies and higher power levels.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How do I know if I need galvanic isolation?</summary>
+                            <div class="faq-answer">
+                                <p>Galvanic isolation is required when you need to: 1) Prevent ground loops between input and output 2) Meet safety requirements for human contact 3) Protect sensitive circuits 4) Handle floating voltage inputs. Common applications include medical equipment, automotive systems, and communication equipment.</p>
+                            </div>
+                        </details>
                     </div>
+
+                    <h2>Packaging and Technology Questions</h2>
                     <div class="card">
-                        <h3>Technical Support</h3>
-                        <p>Direct access to our Field Application Engineering team for specialized support.</p>
-                        <a href="/contact/" class="btn btn--ghost">Contact Support</a>
+                        <details class="faq-item">
+                            <summary>What is ChiP (Converter housed in Package) technology?</summary>
+                            <div class="faq-answer">
+                                <p>ChiP technology houses the entire power converter within a surface-mount package with all components fully integrated. This eliminates the need for external components like magnetics and capacitors, resulting in higher power density, smaller solution size, and simplified manufacturing. ChiP modules are ideal for space-constrained and high-performance applications.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What is the difference between ChiP and VIA packages?</summary>
+                            <div class="faq-answer">
+                                <p>ChiP (Converter housed in Package) integrates the entire converter in a single package with no external components required. VIA (Vertical Integrated Array) arranges power components in a vertical configuration within a compact package but may still require some external components. ChiP typically offers higher power density, while VIA provides a cost-effective solution with good performance.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Can Vicor modules be mounted vertically?</summary>
+                            <div class="faq-answer">
+                                <p>Most Vicor modules are designed for surface mount applications on horizontal PCBs. However, some packages can be mounted vertically with proper mechanical reinforcement and adherence to specific layout guidelines. Contact our FAE team for specific mounting recommendations for your module.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>Thermal Management Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>How do I calculate junction temperature?</summary>
+                            <div class="faq-answer">
+                                <p>Junction temperature can be calculated as: Tj = Ta + Pd × Rthja, where Tj is junction temperature, Ta is ambient temperature, Pd is power dissipation (Vin×Iin - Vout×Iout), and Rthja is junction-to-ambient thermal resistance. Consider worst-case operating conditions for design calculations and ensure Tj remains below the maximum rating in the datasheet.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How important is the PCB layout for thermal performance?</summary>
+                            <div class="faq-answer">
+                                <p>PCB layout is critical for thermal performance. Proper use of copper for heat spreading, thermal vias for heat transfer to internal layers, and connection to large copper areas significantly impact thermal performance. Modules with exposed thermal pads should be connected to copper areas for optimal thermal management.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Do I need a heat sink for my application?</summary>
+                            <div class="faq-answer">
+                                <p>Many applications operate within thermal limits using PCB copper for heat spreading and natural convection. A heat sink is typically needed for high-power applications, high ambient temperatures, or applications with limited PCB area available for heat spreading. Calculate junction temperature for your conditions to determine if additional thermal management is needed.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>Application-Specific Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>How do I select the right solution for my 48V system?</summary>
+                            <div class="faq-answer">
+                                <p>For 48V systems, consider: 1) Use DCMs for simple 48V to intermediate voltage conversion with isolation 2) Use BCMs for current multiplication with isolation 3) Use FPA (PRM+VTM) for high-current loads requiring regulation with preserved dynamics 4) Consider using multiple conversion stages if required. Evaluate efficiency, power density, and cost for your specific requirements.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What is the difference between fixed-ratio and regulated converters?</summary>
+                            <div class="faq-answer">
+                                <p>Fixed-ratio converters (like DCM) maintain a constant voltage ratio between input and output. For example, a 4:1 ratio DCM outputs 12V if input is 48V, and 10V if input is 40V. Regulated converters (like PRM) maintain a constant output voltage regardless of input voltage variations. Use fixed-ratio for applications where input voltage is stable and regulation is not required. Use regulation when input voltage varies significantly or tight output voltage tolerance is required.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Can I parallel power modules for higher current?</summary>
+                            <div class="faq-answer">
+                                <p>DCM modules can be paralleled naturally due to their droop characteristics which promote current sharing. BCM and VTM modules can also be paralleled for higher current applications. PRM modules can be paralleled but may require additional circuitry for effective current sharing. Always refer to specific product documentation for paralleling guidelines and limitations.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What protection features do Vicor modules include?</summary>
+                            <div class="faq-answer">
+                                <p>Vicor modules include several protection features: Over-temperature protection, input over-voltage protection, output over-current limit, and short-circuit protection. Specific features vary by product family and model. Details are available in individual product datasheets. Some modules also feature bidirectional operation and ultrasonic silent operation modes.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>Power System Design Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>How do I minimize EMI in my power system?</summary>
+                            <div class="faq-answer">
+                                <p>To minimize EMI: 1) Use ChiP packages which have inherently low EMI due to minimized loop area 2) Place input and output capacitors close to the power module terminals 3) Implement proper ground planes and return paths 4) Use common mode chokes if needed 5) Consider spread-spectrum modulation if available 6) Minimize high di/dt loops through careful layout. For best results, simulate and measure EMI in your final application.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How do I determine the required input and output capacitance?</summary>
+                            <div class="faq-answer">
+                                <p>Required capacitance values depend on the specific module, application requirements, and EMI specifications. The minimum capacitance values and recommended types are specified in the product datasheets. Typically, high-frequency ceramic capacitors are placed closest to the module terminals to provide charge for high-frequency switching currents. Bulk capacitance is added based on low-frequency ripple requirements and holdup time requirements.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What is the difference between FPA and traditional power architectures?</summary>
+                            <div class="faq-answer">
+                                <p>Traditional power architecture uses a regulator near the load (POL). FPA (Factorized Power Architecture) uses a PRM (regulator) at the input and a VTM (current multiplier) near the load. This separation provides several benefits: 1) Preserved dynamic response of the power delivery network 2) Galvanic isolation 3) Current multiplication 4) Better utilization of available input bus voltage for load delivery. FPA is ideal for high-current applications with fast transient requirements.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>Reliability and Quality Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>What is the typical lifetime of Vicor modules?</summary>
+                            <div class="faq-answer">
+                                <p>Vicor modules are designed for long-term reliability with no wear-out mechanisms like electrolytic capacitors. Typical design life exceeds 100,000 hours at rated conditions. Lifetime is affected by operating temperature, with every 10°C increase approximately halving the component lifetime. Proper thermal management is critical for realizing the long design life. Many applications demonstrate 15+ year operational life in field installations.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What quality standards do Vicor products meet?</summary>
+                            <div class="faq-answer">
+                                <p>Vicor products are manufactured to meet demanding quality standards: ISO 9001 certified manufacturing, AEC-Q100 qualified parts for automotive applications, MIL-PRF-38534 compliant manufacturing for military applications, and IEC 60068 environmental testing. Vicor also performs extensive in-house reliability testing including HTOL (High Temperature Operating Life), temperature cycling, and humidity testing.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How do Vicor modules perform in harsh environments?</summary>
+                            <div class="faq-answer">
+                                <p>Vicor modules are designed for harsh environment applications. They operate from -40°C to +105°C (derated at elevated temperatures) with some models extending to +125°C. The hermetically sealed packages protect against moisture and contamination. The design has high vibration and shock tolerance making it suitable for aerospace, automotive, and industrial applications. Conformal coating can be applied for additional environmental protection when needed.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>System Integration Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>How do I implement bidirectional power flow?</summary>
+                            <div class="faq-answer">
+                                <p>Bidirectional power flow requires modules that support reverse conduction and control. NBM (Non-Breaking Module) Bus Matrix Family products are specifically designed for bidirectional applications. They enable seamless power flow between two voltage domains, useful for backup power systems, battery charging, and other bidirectional applications. Control logic manages the power flow direction based on system requirements.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Can Vicor modules be used in redundant power systems?</summary>
+                            <div class="faq-answer">
+                                <p>Yes, many applications use Vicor modules in redundant configurations. DCM modules can be easily paralleled for N+1 redundancy. For systems requiring OR-ing, additional control or discrete OR-ing circuits may be required. For FPA systems (PRM+VTM), both the PRM and VTM need to be implemented in redundant configurations. Contact our FAE team to develop the optimal redundant architecture for your application.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How do I control the output voltage of a DCM?</summary>
+                            <div class="faq-answer">
+                                <p>DCM modules have a fixed voltage ratio that cannot be adjusted. For example, a 4:1 ratio DCM will always output 1/4 the input voltage. To achieve different output voltages, you must select a DCM with the appropriate turns ratio. For applications requiring adjustable output voltage, consider using a PRM with adjustable feedback configuration or a traditional regulator.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>Support and Documentation Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>Where can I find SPICE models for Vicor modules?</summary>
+                            <div class="faq-answer">
+                                <p>SPICE models for many Vicor power modules are available through our online design tools. These models include both electrical and thermal characteristics for accurate system simulation. Visit our design tools section or contact our support team to access the appropriate models for your specific module.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What design tools are available for system design?</summary>
+                            <div class="faq-answer">
+                                <p>Vicor provides several design tools: online power system configurators, SPICE models for simulation, efficiency calculators, thermal calculators, and reference design examples. Our Power System Configurator helps you quickly select appropriate solutions for your requirements. Webinar recordings and application notes provide additional design guidance.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How do I get technical support for my design?</summary>
+                            <div class="faq-answer">
+                                <p>Technical support is available through multiple channels: local FAEs for application-specific support, online design tools for preliminary design work, application notes for design guidance, and reference designs for common applications. Contact us through our website or your local representative for design assistance, layout review, and system optimization recommendations.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <h2>Additional Resources</h2>
+                    <div class="grid grid--3">
+                        <a href="/support/application-notes/" class="card-link">
+                            <div class="card">
+                                <h3>Application Notes</h3>
+                                <p>Detailed technical documentation covering specific design challenges and solutions.</p>
+                            </div>
+                        </a>
+                        <a href="/support/selection-guides/" class="card-link">
+                            <div class="card">
+                                <h3>Selection Guides</h3>
+                                <p>Guidance on choosing the right power solution for your specific application.</p>
+                            </div>
+                        </a>
+                        <a href="/support/thermal-design/" class="card-link">
+                            <div class="card">
+                                <h3>Thermal Design</h3>
+                                <p>Comprehensive guide to thermal management for power systems.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </section>
+
+                <!-- Call to Action -->
+                <section class="section-cta">
+                    <div class="card text-center">
+                        <h3>Can't Find Your Answer?</h3>
+                        <p>Our application engineering team is ready to help with specific design challenges not covered in our FAQs. Contact us for personalized technical support and design assistance.</p>
+                        <div class="cta-buttons">
+                            <a href="/contact/" class="btn btn--primary">Contact Application Engineers</a>
+                            <a href="/contact/" class="btn btn--secondary" style="margin-left: var(--spacing-md);">Submit Technical Question</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </div>
     </main>
 

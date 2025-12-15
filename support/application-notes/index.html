@@ -3,43 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicor Application Notes - Technical Implementation Guides - LiTong Distributor</title>
-    <meta name="description" content="Vicor application notes with technical implementation guides, design examples, and practical recommendations for Vicor products.">
-    <meta name="keywords" content="Vicor application notes, power design guides, Vicor implementation guides, power conversion applications, technical application notes">
+    <title>Application Notes - Power System Design Guidelines - LiTong Distributor</title>
+    <meta name="description" content="Technical application notes covering power system design guidelines, layout recommendations, and design considerations for Vicor power modules.">
+    <meta name="keywords" content="application notes, power system design, layout recommendations, Vicor design guidelines, power module application">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Vicor Application Notes - Technical Implementation Guides">
-    <meta property="og:description" content="Vicor application notes with technical implementation guides, design examples, and practical recommendations for Vicor products.">
+    <meta property="og:title" content="Application Notes - Power System Design Guidelines">
+    <meta property="og:description" content="Technical application notes covering power system design guidelines, layout recommendations, and design considerations for Vicor power modules.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vicor.elec-distributor.com/support/application-notes/">
-    <meta property="og:image" content="https://vicor.elec-distributor.com/images/application-note.jpg">
+    <meta property="og:image" content="https://vicor.elec-distributor.com/images/application-notes.jpg">
 
-    <!-- Schema Markup for Support Page -->
+    <!-- Schema Markup for Support Article -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Vicor Application Notes",
-        "description": "Technical implementation guides and application notes for Vicor products",
-        "about": "Vicor Application Notes",
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://vicor.elec-distributor.com/"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Support",
-                "item": "https://vicor.elec-distributor.com/support/"
-            }, {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Application Notes",
-                "item": "https://vicor.elec-distributor.com/support/application-notes/"
-            }]
+        "@type": "Article",
+        "headline": "Application Notes - Power System Design Guidelines",
+        "description": "Technical application notes covering power system design guidelines and design considerations",
+        "author": {
+            "@type": "Organization",
+            "name": "LiTong Group",
+            "url": "https://vicor.elec-distributor.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "LiTong Group",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://vicor.elec-distributor.com/images/logo.svg"
+            }
+        },
+        "datePublished": "2025-01-01",
+        "image": "https://vicor.elec-distributor.com/images/application-notes.jpg",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://vicor.elec-distributor.com/support/application-notes/"
         }
     }
     </script>
@@ -131,259 +130,261 @@
             <span class="breadcrumb-separator">/</span>
             <a href="/support/">Support</a>
             <span class="breadcrumb-separator">/</span>
-            <span class="current-page">Application Notes</span>
+            <a href="/support/application-notes/">Application Notes</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="current-page">Power System Design Guidelines</span>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main class="main-content" id="main-content" role="main">
         <div class="container">
-            <header class="page-header">
-                <h1>Vicor Application Notes</h1>
-                <p class="page-description">
-                    Technical implementation guides with practical examples and design recommendations for Vicor products.
-                    Our application notes provide detailed information on how to effectively implement Vicor solutions in your designs.
-                </p>
-            </header>
+            <article>
+                <header class="article-header">
+                    <h1>Application Notes - Power System Design Guidelines</h1>
+                    <div class="article-meta">
+                        <span class="meta-item">Application Notes</span>
+                        <span class="meta-separator">•</span>
+                        <time datetime="2025-01-01">January 1, 2025</time>
+                        <span class="meta-separator">•</span>
+                        <span class="meta-item">Technical Article</span>
+                    </div>
+                </header>
 
-            <!-- Introduction Content -->
-            <section class="section-intro mb-xl">
-                <h2>Technical Implementation Resources</h2>
-                <p>
-                    Vicor application notes provide in-depth technical guidance for implementing Vicor power solutions in real-world applications.
-                    These documents provide practical examples, design procedures, and recommendations that go beyond basic specifications
-                    to help you successfully implement Vicor products in your designs.
-                </p>
-                <p>
-                    Our application notes cover implementation techniques, design considerations, and best practices developed through
-                    years of experience and collaboration with customers across various industries.
-                </p>
-            </section>
+                <div class="article-content">
+                    <p class="article-lead">
+                        This collection of application notes provides practical guidelines for implementing power systems using Vicor modules.
+                        Each note addresses specific design challenges and offers solutions based on real-world applications and testing.
+                    </p>
 
-            <!-- Application Notes Categories -->
-            <section class="section-categories mb-xl">
-                <h2>Application Notes by Category</h2>
-                <div class="grid grid--2">
-                    <div class="card">
-                        <h3>DCM Implementation</h3>
-                        <p>
-                            Application notes covering the implementation of DCM (DC-DC Converter Module) products including circuit design,
-                            layout recommendations, and performance optimization techniques.
-                        </p>
-                        <ul>
-                            <li>DCM basic implementation</li>
-                            <li>Paralleling DCM modules</li>
-                            <li>DCM in 48V systems</li>
-                            <li>EMI considerations for DCMs</li>
-                        </ul>
-                        <a href="/support/application-notes/dcm/" class="btn btn--ghost">Browse Notes</a>
-                    </div>
-                    <div class="card">
-                        <h3>BCM Implementation</h3>
-                        <p>
-                            Application notes for implementing BCM (Bus Converter Module) products, including current sharing,
-                            thermal design, and integration with downstream converters.
-                        </p>
-                        <ul>
-                            <li>BCM basic implementation</li>
-                            <li>BCM in FPA systems</li>
-                            <li>Thermal design for BCMs</li>
-                            <li>Paralleling BCM modules</li>
-                        </ul>
-                        <a href="/support/application-notes/bcm/" class="btn btn--ghost">Browse Notes</a>
-                    </div>
-                    <div class="card">
-                        <h3>FPA Implementation</h3>
-                        <p>
-                            Application notes for Factorized Power Architecture (FPA) using PRM and VTM modules,
-                            including design procedures and optimization techniques.
-                        </p>
-                        <ul>
-                            <li>FPA design fundamentals</li>
-                            <li>PRM+VTM system design</li>
-                            <li>Control loop considerations</li>
-                            <li>FPA in computing systems</li>
-                        </ul>
-                        <a href="/support/application-notes/fpa/" class="btn btn--ghost">Browse Notes</a>
-                    </div>
-                    <div class="card">
-                        <h3>System Design</h3>
-                        <p>
-                            Application notes covering complete power system design including architecture selection,
-                            component interaction, and system-level optimization.
-                        </p>
-                        <ul>
-                            <li>Power architecture selection</li>
-                            <li>System efficiency optimization</li>
-                            <li>Thermal management strategies</li>
-                            <li>EMI/EMC design</li>
-                        </ul>
-                        <a href="/support/application-notes/system-design/" class="btn btn--ghost">Browse Notes</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Featured Application Notes -->
-            <section class="section-featured mb-xl">
-                <h2>Featured Application Notes</h2>
-                <div class="grid grid--2">
-                    <div class="card">
-                        <h3>AN-2001: DCM Implementation in 48V Systems</h3>
-                        <p class="meta">Application Note • 18 min read</p>
-                        <p>
-                            Detailed guidance on implementing DCM modules in 48V power delivery systems, including design trade-offs,
-                            efficiency optimization, and thermal considerations.
-                        </p>
-                        <a href="/support/application-notes/dcm-48v-implementation/" class="btn btn--ghost">Read Note</a>
-                        <a href="/resources/an-2001-dcm-48v-implementation.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
-                    </div>
-                    <div class="card">
-                        <h3>AN-2015: Factorized Power Architecture Design</h3>
-                        <p class="meta">Application Note • 22 min read</p>
-                        <p>
-                            Comprehensive guide to designing systems with Factorized Power Architecture using PRM and VTM modules,
-                            including loop stability and efficiency considerations.
-                        </p>
-                        <a href="/support/application-notes/fpa-design-guide/" class="btn btn--ghost">Read Note</a>
-                        <a href="/resources/an-2015-fpa-design-guide.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
-                    </div>
-                    <div class="card">
-                        <h3>AN-2023: BCM Current Sharing Techniques</h3>
-                        <p class="meta">Application Note • 15 min read</p>
-                        <p>
-                            Implementation guide for paralleling BCM modules for high-current applications, including design
-                            techniques and performance validation.
-                        </p>
-                        <a href="/support/application-notes/bcm-current-sharing/" class="btn btn--ghost">Read Note</a>
-                        <a href="/resources/an-2023-bcm-current-sharing.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
-                    </div>
-                    <div class="card">
-                        <h3>AN-2031: EMI Design for High-Density Power Systems</h3>
-                        <p class="meta">Application Note • 25 min read</p>
-                        <p>
-                            Practical techniques for minimizing EMI in high-density power systems using Vicor products,
-                            including layout recommendations and filtering strategies.
-                        </p>
-                        <a href="/support/application-notes/emi-design/" class="btn btn--ghost">Read Note</a>
-                        <a href="/resources/an-2031-emi-design.pdf" class="btn btn--primary" style="margin-left: var(--spacing-md);">Download PDF</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Design Examples -->
-            <section class="section-examples mb-xl">
-                <h2>Design Examples and Reference Designs</h2>
-                <div class="card">
-                    <h3>48V to 12V Power Delivery</h3>
+                    <h2>Overview of Application Notes</h2>
                     <p>
-                        Complete design example for 48V to 12V power delivery using various Vicor architectures:
+                        Application notes are technical documents that provide guidance on specific aspects of power system design.
+                        These notes are based on engineering experience, laboratory testing, and field applications.
+                        They cover topics such as layout recommendations, thermal management, component selection, and system integration strategies.
+                    </p>
+                    <p>
+                        Our application notes focus on helping designers implement efficient power delivery networks that maximize the performance of Vicor power modules while ensuring reliability and regulatory compliance.
+                    </p>
+
+                    <h2>Key Design Principles</h2>
+                    <div class="grid grid--2">
+                        <div class="card">
+                            <h3>Power Distribution Networks</h3>
+                            <p>Design PDNs for optimal performance considering source, interconnect, and load impedances. Understanding the interaction between these elements is crucial for achieving fast transient response and stable operation.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Thermal Management</h3>
+                            <p>Effective thermal design is critical for long-term reliability. Consider thermal resistance, heat spreading, and cooling methods. Higher efficiency reduces thermal management requirements.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Layout Guidelines</h3>
+                            <p>Proper layout minimizes parasitic inductance and maximizes thermal performance. Pay attention to current loops, grounding schemes, and EMI mitigation techniques.</p>
+                        </div>
+                        <div class="card">
+                            <h3>System Integration</h3>
+                            <p>Consider the complete power system including input sources, distribution, regulation, filtering, and load characteristics for optimal end-to-end performance.</p>
+                        </div>
+                    </div>
+
+                    <h2>Layout Recommendations</h2>
+                    <h3>DCM Module Layout Guidelines</h3>
+                    <p>
+                        For DCM modules, focus on minimizing input and output loop inductance to reduce voltage transients and improve EMI performance.
+                        Key considerations include:
                     </p>
                     <ul>
-                        <li>DCM + Point of Load (POL) approach</li>
-                        <li>BCM + POL approach</li>
-                        <li>Factorized Power Architecture (PRM+VTM) approach</li>
-                        <li>Performance comparison and selection criteria</li>
+                        <li>Place input and output capacitors as close as possible to the module terminals</li>
+                        <li>Keep high-current paths as short and wide as possible</li>
+                        <li>Connect input and output grounds separately to the main system ground plane</li>
+                        <li>Use multiple vias to connect high-current traces to internal ground planes</li>
+                        <li>Provide adequate clearance for creepage and clearance requirements</li>
                     </ul>
-                    
-                    <h3>High-Current Low-Voltage Applications</h3>
-                    <p>
-                        Design example for high-current, low-voltage applications (e.g., processor power):
-                    </p>
-                    <ul>
-                        <li>VTM-based current multiplication</li>
-                        <li>Layout considerations for high-frequency, high-current designs</li>
-                        <li>Thermal design for maximum efficiency</li>
-                        <li>Control loop stability considerations</li>
-                    </ul>
-                    
-                    <h3>Isolated Power Systems</h3>
-                    <p>
-                        Implementation example for applications requiring isolation:
-                    </p>
-                    <ul>
-                        <li>DCM for isolated bus conversion</li>
-                        <li>VTM for isolated current multiplication</li>
-                        <li>Isolation requirements and safety considerations</li>
-                        <li>EMI considerations for isolated systems</li>
-                    </ul>
-                </div>
-            </section>
 
-            <!-- Engineer's Perspective -->
-            <section class="section-engineer-perspective mb-xl">
-                <h2>FAE Perspective: Common Implementation Challenges</h2>
-                <div class="card">
-                    <h3>Layout and Grounding</h3>
+                    <h3>BCM/VTM Layout Guidelines</h3>
                     <p>
-                        Proper PCB layout is critical for high-frequency, high-efficiency converters. Common challenges include:
+                        For BCM and VTM modules, which operate as current multipliers:
                     </p>
                     <ul>
-                        <li>Minimizing high-frequency noise coupling</li>
-                        <li>Creating proper ground planes for high-frequency return paths</li>
-                        <li>Managing thermal performance through copper distribution</li>
-                        <li>Minimizing parasitic inductance in high-current paths</li>
+                        <li>Minimize parasitic inductance in current multiplication paths</li>
+                        <li>Ensure balanced routing for positive and negative terminals</li>
+                        <li>Pay special attention to isolation spacing for high-voltage applications</li>
+                        <li>Thermally couple the module to the PCB for heat spreading</li>
+                        <li>Consider the interaction between multiple paralleled devices</li>
                     </ul>
-                    
-                    <h3>Input and Output Filtering</h3>
-                    <p>
-                        While Vicor modules have excellent EMI performance, proper input and output filtering is often required:
-                    </p>
-                    <ul>
-                        <li>Input filtering for EMI compliance</li>
-                        <li>Output filtering for ripple requirements</li>
-                        <li>Interaction with downstream converters</li>
-                        <li>Impact on stability in FPA systems</li>
-                    </ul>
-                    
-                    <h3>Thermal Management</h3>
-                    <p>
-                        Despite high efficiency, thermal design is still important for reliability and performance:
-                    </p>
-                    <ul>
-                        <li>Heat transfer from modules to PCB</li>
-                        <li>Impact of temperature on component specifications</li>
-                        <li>Forced vs. natural convection</li>
-                        <li>Thermal interaction between multiple modules</li>
-                    </ul>
-                </div>
-            </section>
 
-            <!-- Tools and Resources -->
-            <section class="section-resources mb-xl">
-                <h2>Implementation Tools and Resources</h2>
-                <div class="grid grid--2">
+                    <h3>PRM Layout Guidelines</h3>
+                    <p>
+                        For PRM regulators, which provide precise voltage regulation:
+                    </p>
+                    <ul>
+                        <li>Protect the feedback trace from noise with a guard trace connected to signal ground</li>
+                        <li>Route feedback connections directly to the load if remote sensing is required</li>
+                        <li>Minimize loop areas for high-frequency switching currents</li>
+                        <li>Ensure stable ground connections for control circuitry</li>
+                        <li>Separate power grounds from control grounds to prevent coupling</li>
+                    </ul>
+
+                    <h2>Thermal Design Considerations</h2>
                     <div class="card">
-                        <h3>Design Tools</h3>
+                        <h3>Heat Transfer Mechanisms</h3>
+                        <p>
+                            Power modules dissipate heat through three primary mechanisms:
+                        </p>
                         <ul>
-                            <li><a href="/tools/power-system-designer/">Power System Designer</a></li>
-                            <li><a href="/tools/thermal-calculator/">Thermal Calculator</a></li>
-                            <li><a href="/tools/efficiency-estimator/">Efficiency Estimator</a></li>
-                            <li><a href="/tools/emi-analyzer/">EMI Analyzer</a></li>
+                            <li><strong>Conduction:</strong> Heat transfer through module body and terminals to PCB and components</li>
+                            <li><strong>Convection:</strong> Heat transfer to ambient air through natural or forced airflow</li>
+                            <li><strong>Radiation:</strong> Electromagnetic radiation from hot surfaces to cooler objects</li>
                         </ul>
-                    </div>
-                    <div class="card">
-                        <h3>Additional Resources</h3>
+                        
+                        <h3>Thermal Management Strategies</h3>
+                        <p>
+                            Effective thermal management involves:
+                        </p>
                         <ul>
-                            <li><a href="/support/selection-guides/">Selection Guides</a></li>
-                            <li><a href="/support/thermal-design/">Thermal Design Resources</a></li>
-                            <li><a href="/support/packaging-technology/">Packaging Technology Info</a></li>
-                            <li><a href="/support/faq/">Frequently Asked Questions</a></li>
+                            <li>Adequate copper for heat spreading on the PCB</li>
+                            <li>Thermal vias for heat transfer to internal copper layers</li>
+                            <li>Forced airflow if necessary to meet temperature targets</li>
+                            <li>Heat sinks mounted to the PCB or directly to components</li>
                         </ul>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Call to Action -->
-            <section class="section-cta">
-                <div class="card text-center">
-                    <h3>Need Implementation Support?</h3>
-                    <p>Our FAE team can help with implementation challenges, design reviews, and custom solutions. Contact us for specialized application support.</p>
-                    <div class="cta-buttons">
-                        <a href="/contact/" class="btn btn--primary">Contact FAE Team</a>
-                        <a href="/contact/" class="btn btn--secondary" style="margin-left: var(--spacing-md);">Request Design Review</a>
+                        <h3>Derating Curves</h3>
+                        <p>
+                            All power modules have derating curves that show maximum power vs. ambient temperature.
+                            Operating within these limits ensures long-term reliability.
+                            Higher efficiency modules provide better derating performance by dissipating less heat.
+                        </p>
+                    </div>
+
+                    <h2>EMI and Noise Mitigation</h2>
+                    <h3>Common EMI Sources in Power Systems</h3>
+                    <ul>
+                        <li>Switching transients in power stages</li>
+                        <li>Parasitic oscillations in high-frequency circuits</li>
+                        <li>Poor return path design creating common mode noise</li>
+                        <li>Inadequate filtering for both differential and common mode noise</li>
+                        <li>Harmonics generated by periodic switching</li>
+                    </ul>
+
+                    <h3>EMI Reduction Techniques</h3>
+                    <p>
+                        To reduce EMI in your power system design:
+                    </p>
+                    <ul>
+                        <li>Minimize high di/dt current loops by optimizing component placement</li>
+                        <li>Use proper bypassing with ceramic capacitors at power pins</li>
+                        <li>Implement effective EMI filtering at input and output ports</li>
+                        <li>Use spread spectrum or dithering techniques where applicable</li>
+                        <li>Follow proper grounding practices to minimize common mode noise</li>
+                        <li>Consider shielding for sensitive circuits</li>
+                    </ul>
+
+                    <h2>Application Specific Design Guidelines</h2>
+                    <div class="grid grid--3">
+                        <div class="card">
+                            <h3>Data Center Applications</h3>
+                            <ul>
+                                <li>Focus on efficiency to minimize cooling costs</li>
+                                <li>Dense layout to maximize computing power per U</li>
+                                <li>Reliability with redundant power paths</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Automotive Applications</h3>
+                            <ul>
+                                <li>Meet stringent EMI requirements for safety-critical systems</li>
+                                <li>Withstand harsh environmental conditions</li>
+                                <li>Include protection against transients</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Industrial Applications</h2>
+                            <ul>
+                                <li>Robust design for continuous operation</li>
+                                <li>EMI immunity in noisy environments</li>
+                                <li>Easy to service and maintain</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>System Integration Examples</h2>
+                    <h3>Example 1: 48V to POL Distribution</h3>
+                    <p>
+                        For converting from 48V to point-of-load voltages in a server or telecommunications application:
+                    </p>
+                    <ul>
+                        <li>Use DCM for initial 48V to intermediate voltage conversion</li>
+                        <li>Use PRM or VTM-FPA for final voltage regulation</li>
+                        <li>Implement proper filtering at each stage</li>
+                        <li>Ensure adequate thermal management for all components</li>
+                    </ul>
+
+                    <h3>Example 2: High-Current CPU Power Supply</h3>
+                    <p>
+                        For supplying high-current, fast-transient CPU power:
+                    </p>
+                    <ul>
+                        <li>Consider FPA (PRM+VTM) for high-current applications</li>
+                        <li>Ensure adequate input bulk capacitance</li>
+                        <li>Minimize output loop inductance for fast transient response</li>
+                        <li>Balance multiple modules for optimal current sharing</li>
+                    </ul>
+
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="card">
+                        <details class="faq-item">
+                            <summary>How do I calculate if my thermal design is adequate?</summary>
+                            <p>Calculate junction temperature using: Tj = Ta + Pdiss × Rthja. The junction temperature should be below the maximum rating listed in the datasheet across the full operating range. Account for worst-case conditions.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Can I parallel power modules for higher current?</summary>
+                            <p>Many Vicor modules can be paralleled for higher current. DCMs naturally share current due to their droop characteristics. BCMs and VTMs can be paralleled but may require additional balancing components. PRMs typically don't share current as well.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How do I determine the required input and output capacitance?</summary>
+                            <p>The required capacitance depends on the specific module, application requirements, and EMI specifications. Refer to the individual product data sheets for minimum values and consider additional capacitance for low-frequency ripple and holdup time requirements.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What is Factorized Power Architecture (FPA) and when should I use it?</summary>
+                            <p>FPA uses a PRM (regulator) and VTM (current multiplier) in a two-stage approach. Use FPA when you need high current, fast transient response, and galvanic isolation while preserving the dynamic response of the power delivery network.</p>
+                        </details>
+                    </div>
+
+                    <h2>Related Application Notes</h2>
+                    <div class="grid grid--3">
+                        <a href="/support/thermal-design/" class="card-link">
+                            <div class="card">
+                                <h3>Thermal Design Guidelines</h3>
+                                <p>Detailed thermal management strategies for Vicor power modules.</p>
+                            </div>
+                        </a>
+                        <a href="/support/packaging-technology/" class="card-link">
+                            <div class="card">
+                                <h3>Packaging Technology</h3>
+                                <p>Information about ChiP, VIA, and other advanced packaging technologies.</p>
+                            </div>
+                        </a>
+                        <a href="/support/selection-guides/" class="card-link">
+                            <div class="card">
+                                <h3>Selection Guides</h3>
+                                <p>Guidance on choosing the right power solution for your application.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </section>
+
+                <!-- Call to Action -->
+                <section class="section-cta">
+                    <div class="card text-center">
+                        <h3>Need Application Support for Your Design?</h3>
+                        <p>Our FAE team provides detailed design assistance and can help address specific application challenges. Contact us for technical support, design reviews, or custom solutions.</p>
+                        <div class="cta-buttons">
+                            <a href="/contact/" class="btn btn--primary">Contact Application Engineers</a>
+                            <a href="/contact/" class="btn btn--secondary" style="margin-left: var(--spacing-md);">Request Design Review</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </div>
     </main>
 
