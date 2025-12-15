@@ -11,10 +11,24 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initContactForm();
     initSearchFunctionality();
-    
+    initHeaderScrollBehavior();
+    initScrollAnimations();
+
     // Set up performance monitoring
     initPerformanceMonitoring();
+
+    // Add skip link for accessibility
+    initSkipLink();
 });
+
+// Add skip link for accessibility
+function initSkipLink() {
+    const skipLink = document.createElement('a');
+    skipLink.href = '#main-content';
+    skipLink.textContent = 'Skip to main content';
+    skipLink.className = 'skip-link';
+    document.body.insertBefore(skipLink, document.body.firstChild);
+}
 
 // Mobile menu functionality
 function initMobileMenu() {
@@ -308,6 +322,52 @@ function throttle(func, limit) {
             setTimeout(() => inThrottle = false, limit);
         }
     };
+}
+
+// Header scroll behavior
+function initHeaderScrollBehavior() {
+    const header = document.querySelector('.header');
+    let lastScrollTop = 0;
+
+    if (!header) return;
+
+    window.addEventListener('scroll', throttle(function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        lastScrollTop = scrollTop;
+    }, 10));
+}
+
+// Scroll animations for elements
+function initScrollAnimations() {
+    // Intersection Observer for animations when elements come into view
+    if ('IntersectionObserver' in window) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards and other elements
+        document.querySelectorAll('.card, .section').forEach(el => {
+            observer.observe(el);
+        });
+    }
 }
 
 // Get URL parameters
