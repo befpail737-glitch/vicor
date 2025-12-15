@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e8ed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heatGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg7)" rx="8"/>
+  <rect x="2" y="2" width="1196" height="796" fill="none" stroke="#cccccc" stroke-width="2" rx="8"/>
+
+  <!-- Heat Sink -->
+  <g transform="translate(300, 200)">
+    <!-- Base plate -->
+    <rect x="0" y="200" width="600" height="30" fill="#0066cc" opacity="0.3"/>
+
+    <!-- Fins -->
+    <rect x="50" y="50" width="40" height="150" fill="none" stroke="#0066cc" stroke-width="3"/>
+    <rect x="130" y="50" width="40" height="150" fill="none" stroke="#0066cc" stroke-width="3"/>
+    <rect x="210" y="50" width="40" height="150" fill="none" stroke="#0066cc" stroke-width="3"/>
+    <rect x="290" y="50" width="40" height="150" fill="none" stroke="#0066cc" stroke-width="3"/>
+    <rect x="370" y="50" width="40" height="150" fill="none" stroke="#0066cc" stroke-width="3"/>
+    <rect x="450" y="50" width="40" height="150" fill="none" stroke="#0066cc" stroke-width="3"/>
+
+    <!-- Heat visualization -->
+    <path d="M 300,250 L 250,300 L 260,320 L 240,340 L 250,360"
+          fill="none" stroke="#ff6600" stroke-width="3" opacity="0.5"/>
+    <path d="M 330,250 L 320,300 L 330,320 L 320,340 L 330,360"
+          fill="none" stroke="#ff6600" stroke-width="3" opacity="0.5"/>
+    <path d="M 360,250 L 380,300 L 370,320 L 390,340 L 380,360"
+          fill="none" stroke="#ff6600" stroke-width="3" opacity="0.5"/>
+
+    <!-- Airflow arrows -->
+    <path d="M 100,20 L 100,40" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 220,20 L 220,40" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 340,20 L 340,40" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 460,20 L 460,40" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0,0 10,5 0,10 3,5" fill="#0066cc"/>
+    </marker>
+  </defs>
+
+  <!-- Title Text -->
+  <text x="600" y="600" font-family="Arial, sans-serif" font-size="48" fill="#333333" text-anchor="middle" font-weight="bold">Thermal Management</text>
+  <text x="600" y="660" font-family="Arial, sans-serif" font-size="32" fill="#666666" text-anchor="middle">热管理解决方案</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="moduleBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e8ed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#moduleBg4)" rx="8"/>
+  <rect x="2" y="2" width="796" height="596" fill="none" stroke="#cccccc" stroke-width="2" rx="8"/>
+
+  <!-- Module Package -->
+  <g transform="translate(250, 150)">
+    <!-- Main module body -->
+    <rect x="0" y="0" width="300" height="200" fill="none" stroke="#0066cc" stroke-width="4" rx="4"/>
+
+    <!-- Pin connections -->
+    <g stroke="#0066cc" stroke-width="3">
+      <!-- Left pins -->
+      <line x1="-30" y1="60" x2="0" y2="60"/>
+      <line x1="-30" y1="100" x2="0" y2="100"/>
+      <line x1="-30" y1="140" x2="0" y2="140"/>
+
+      <!-- Right pins -->
+      <line x1="300" y1="60" x2="330" y2="60"/>
+      <line x1="300" y1="100" x2="330" y2="100"/>
+      <line x1="300" y1="140" x2="330" y2="140"/>
+    </g>
+
+    <!-- Pin labels -->
+    <text x="-50" y="65" font-family="Arial" font-size="16" fill="#333333" text-anchor="end">PRI+</text>
+    <text x="-50" y="105" font-family="Arial" font-size="16" fill="#333333" text-anchor="end">PRI-</text>
+    <text x="-50" y="145" font-family="Arial" font-size="16" fill="#333333" text-anchor="end">NC</text>
+
+    <text x="350" y="65" font-family="Arial" font-size="16" fill="#333333">SEC+</text>
+    <text x="350" y="105" font-family="Arial" font-size="16" fill="#333333">SEC-</text>
+    <text x="350" y="145" font-family="Arial" font-size="16" fill="#333333">NC</text>
+
+    <!-- Internal transformer symbol -->
+    <g transform="translate(150, 100)">
+      <!-- Primary coil -->
+      <path d="M -60,-30 Q -60,-45 -50,-45 Q -40,-45 -40,-30 Q -40,-15 -50,-15 Q -60,-15 -60,-30"
+            fill="none" stroke="#0066cc" stroke-width="2"/>
+      <path d="M -60,30 Q -60,15 -50,15 Q -40,15 -40,30 Q -40,45 -50,45 Q -60,45 -60,30"
+            fill="none" stroke="#0066cc" stroke-width="2"/>
+      <line x1="-50" y1="-45" x2="-50" y2="-55" stroke="#0066cc" stroke-width="2"/>
+      <line x1="-50" y1="45" x2="-50" y2="55" stroke="#0066cc" stroke-width="2"/>
+
+      <!-- Secondary coil -->
+      <path d="M 40,-30 Q 40,-45 50,-45 Q 60,-45 60,-30 Q 60,-15 50,-15 Q 40,-15 40,-30"
+            fill="none" stroke="#0066cc" stroke-width="2"/>
+      <path d="M 40,30 Q 40,15 50,15 Q 60,15 60,30 Q 60,45 50,45 Q 40,45 40,30"
+            fill="none" stroke="#0066cc" stroke-width="2"/>
+      <line x1="50" y1="-45" x2="50" y2="-55" stroke="#0066cc" stroke-width="2"/>
+      <line x1="50" y1="45" x2="50" y2="55" stroke="#0066cc" stroke-width="2"/>
+
+      <!-- Core -->
+      <line x1="-15" y1="-60" x2="-15" y2="60" stroke="#0066cc" stroke-width="2"/>
+      <line x1="15" y1="-60" x2="15" y2="60" stroke="#0066cc" stroke-width="2"/>
+    </g>
+
+    <!-- Module label -->
+    <text x="150" y="30" font-family="Arial" font-size="24" fill="#0066cc" text-anchor="middle" font-weight="bold">VTM</text>
+  </g>
+
+  <!-- Title Text -->
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="36" fill="#333333" text-anchor="middle" font-weight="bold">VTM Transformer Module</text>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="28" fill="#666666" text-anchor="middle">VTM变压器模块</text>
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="20" fill="#999999" text-anchor="middle">Current Multiplier</text>
+</svg>

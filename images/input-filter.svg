@@ -1,10 +1,73 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="600" fill="#f0f8ff"/>
-  <text x="400" y="300" font-family="Arial" font-size="36" text-anchor="middle" fill="#0072ce">Vicor Input Filter</text>
-  <text x="400" y="350" font-family="Arial" font-size="24" text-anchor="middle" fill="#6B7280">M-FIAM and QPI Series</text>
-  <circle cx="400" cy="200" r="80" fill="#0072ce" opacity="0.2"/>
-  <rect x="300" y="250" width="200" height="120" rx="10" fill="#0072ce" opacity="0.3"/>
-  <path d="M 250 400 Q 400 350 550 400" stroke="#0072ce" stroke-width="4" fill="none"/>
-  <path d="M 250 440 Q 400 390 550 440" stroke="#0072ce" stroke-width="4" fill="none"/>
-  <path d="M 250 480 Q 400 430 550 480" stroke="#0072ce" stroke-width="4" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="moduleBg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e8ed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#moduleBg5)" rx="8"/>
+  <rect x="2" y="2" width="796" height="596" fill="none" stroke="#cccccc" stroke-width="2" rx="8"/>
+
+  <!-- Filter Circuit -->
+  <g transform="translate(150, 200)">
+    <!-- Input terminals -->
+    <circle cx="0" cy="0" r="8" fill="#0066cc"/>
+    <circle cx="0" cy="100" r="8" fill="#0066cc"/>
+    <text x="-30" y="5" font-family="Arial" font-size="18" fill="#333333" text-anchor="end">VIN+</text>
+    <text x="-30" y="105" font-family="Arial" font-size="18" fill="#333333" text-anchor="end">VIN-</text>
+
+    <!-- First inductor (top line) -->
+    <path d="M 0,0 L 40,0 Q 50,-15 60,0 T 80,0 T 100,0 L 140,0"
+          fill="none" stroke="#0066cc" stroke-width="3"/>
+
+    <!-- First capacitor (to ground) -->
+    <line x1="140" y1="0" x2="140" y2="40" stroke="#0066cc" stroke-width="2"/>
+    <line x1="130" y1="40" x2="150" y2="40" stroke="#0066cc" stroke-width="3"/>
+    <line x1="130" y1="45" x2="150" y2="45" stroke="#0066cc" stroke-width="3"/>
+    <line x1="140" y1="45" x2="140" y2="100" stroke="#0066cc" stroke-width="2"/>
+
+    <!-- Second inductor (top line) -->
+    <path d="M 140,0 L 180,0 Q 190,-15 200,0 T 220,0 T 240,0 L 280,0"
+          fill="none" stroke="#0066cc" stroke-width="3"/>
+
+    <!-- Second capacitor (to ground) -->
+    <line x1="280" y1="0" x2="280" y2="40" stroke="#0066cc" stroke-width="2"/>
+    <line x1="270" y1="40" x2="290" y2="40" stroke="#0066cc" stroke-width="3"/>
+    <line x1="270" y1="45" x2="290" y2="45" stroke="#0066cc" stroke-width="3"/>
+    <line x1="280" y1="45" x2="280" y2="100" stroke="#0066cc" stroke-width="2"/>
+
+    <!-- Third inductor (top line) -->
+    <path d="M 280,0 L 320,0 Q 330,-15 340,0 T 360,0 T 380,0 L 420,0"
+          fill="none" stroke="#0066cc" stroke-width="3"/>
+
+    <!-- Third capacitor (to ground) -->
+    <line x1="420" y1="0" x2="420" y2="40" stroke="#0066cc" stroke-width="2"/>
+    <line x1="410" y1="40" x2="430" y2="40" stroke="#0066cc" stroke-width="3"/>
+    <line x1="410" y1="45" x2="430" y2="45" stroke="#0066cc" stroke-width="3"/>
+    <line x1="420" y1="45" x2="420" y2="100" stroke="#0066cc" stroke-width="2"/>
+
+    <!-- Bottom line (return path) -->
+    <line x1="0" y1="100" x2="500" y2="100" stroke="#0066cc" stroke-width="3"/>
+
+    <!-- Output terminals -->
+    <circle cx="500" cy="0" r="8" fill="#0066cc"/>
+    <circle cx="500" cy="100" r="8" fill="#0066cc"/>
+    <text x="530" y="5" font-family="Arial" font-size="18" fill="#333333">VOUT+</text>
+    <text x="530" y="105" font-family="Arial" font-size="18" fill="#333333">VOUT-</text>
+
+    <!-- Component labels -->
+    <text x="70" y="-25" font-family="Arial" font-size="16" fill="#666666">L1</text>
+    <text x="210" y="-25" font-family="Arial" font-size="16" fill="#666666">L2</text>
+    <text x="350" y="-25" font-family="Arial" font-size="16" fill="#666666">L3</text>
+    <text x="155" y="30" font-family="Arial" font-size="16" fill="#666666">C1</text>
+    <text x="295" y="30" font-family="Arial" font-size="16" fill="#666666">C2</text>
+    <text x="435" y="30" font-family="Arial" font-size="16" fill="#666666">C3</text>
+  </g>
+
+  <!-- Title Text -->
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="36" fill="#333333" text-anchor="middle" font-weight="bold">Input EMI Filter</text>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="28" fill="#666666" text-anchor="middle">输入滤波器</text>
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="20" fill="#999999" text-anchor="middle">LC π-Filter Configuration</text>
 </svg>

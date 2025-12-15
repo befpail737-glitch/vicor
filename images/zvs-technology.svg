@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e8ed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg8)" rx="8"/>
+  <rect x="2" y="2" width="1196" height="796" fill="none" stroke="#cccccc" stroke-width="2" rx="8"/>
+
+  <!-- Waveform Display -->
+  <g transform="translate(150, 180)">
+    <!-- Grid -->
+    <line x1="0" y1="250" x2="900" y2="250" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="50" x2="900" y2="50" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="150" x2="900" y2="150" stroke="#cccccc" stroke-width="1" stroke-dasharray="5,5"/>
+
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="0" y2="300" stroke="#666666" stroke-width="2"/>
+    <line x1="0" y1="250" x2="900" y2="250" stroke="#666666" stroke-width="2"/>
+
+    <!-- Voltage waveform (sine wave at zero crossing) -->
+    <path d="M 0,150 Q 50,150 100,50 T 200,50 Q 250,50 300,150 T 400,150 Q 450,150 500,50 T 600,50 Q 650,50 700,150 T 800,150"
+          fill="none" stroke="#0066cc" stroke-width="4"/>
+
+    <!-- Current waveform (starts at zero) -->
+    <path d="M 100,250 Q 150,250 200,150 T 300,150 Q 350,150 400,250 T 500,250 Q 550,250 600,150 T 700,150 Q 750,150 800,250"
+          fill="none" stroke="#00cc66" stroke-width="4"/>
+
+    <!-- Zero crossing markers -->
+    <circle cx="100" cy="150" r="8" fill="#ff6600"/>
+    <circle cx="300" cy="150" r="8" fill="#ff6600"/>
+    <circle cx="500" cy="150" r="8" fill="#ff6600"/>
+    <circle cx="700" cy="150" r="8" fill="#ff6600"/>
+
+    <!-- Labels -->
+    <text x="20" y="140" font-family="Arial" font-size="20" fill="#0066cc" font-weight="bold">Voltage</text>
+    <text x="20" y="270" font-family="Arial" font-size="20" fill="#00cc66" font-weight="bold">Current</text>
+    <text x="450" y="30" font-family="Arial" font-size="24" fill="#333333" text-anchor="middle" font-weight="bold">Zero Voltage Switching</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(200, 520)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#0066cc" stroke-width="4"/>
+    <text x="50" y="5" font-family="Arial" font-size="18" fill="#333333">电压波形</text>
+
+    <line x1="200" y1="0" x2="240" y2="0" stroke="#00cc66" stroke-width="4"/>
+    <text x="250" y="5" font-family="Arial" font-size="18" fill="#333333">电流波形</text>
+
+    <circle cx="440" cy="0" r="6" fill="#ff6600"/>
+    <text x="460" y="5" font-family="Arial" font-size="18" fill="#333333">零电压切换点</text>
+  </g>
+
+  <!-- Title Text -->
+  <text x="600" y="620" font-family="Arial, sans-serif" font-size="48" fill="#333333" text-anchor="middle" font-weight="bold">ZVS Technology</text>
+  <text x="600" y="680" font-family="Arial, sans-serif" font-size="32" fill="#666666" text-anchor="middle">零电压开关技术</text>
+</svg>

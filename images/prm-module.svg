@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="moduleBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e8ed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#moduleBg3)" rx="8"/>
+  <rect x="2" y="2" width="796" height="596" fill="none" stroke="#cccccc" stroke-width="2" rx="8"/>
+
+  <!-- Module Package -->
+  <g transform="translate(250, 150)">
+    <!-- Main module body -->
+    <rect x="0" y="0" width="300" height="200" fill="none" stroke="#0066cc" stroke-width="4" rx="4"/>
+
+    <!-- Pin connections -->
+    <g stroke="#0066cc" stroke-width="3">
+      <!-- Left pins -->
+      <line x1="-30" y1="50" x2="0" y2="50"/>
+      <line x1="-30" y1="100" x2="0" y2="100"/>
+      <line x1="-30" y1="150" x2="0" y2="150"/>
+
+      <!-- Right pins -->
+      <line x1="300" y1="50" x2="330" y2="50"/>
+      <line x1="300" y1="100" x2="330" y2="100"/>
+      <line x1="300" y1="150" x2="330" y2="150"/>
+    </g>
+
+    <!-- Pin labels -->
+    <text x="-50" y="55" font-family="Arial" font-size="16" fill="#333333" text-anchor="end">VIN</text>
+    <text x="-50" y="105" font-family="Arial" font-size="16" fill="#333333" text-anchor="end">RTN</text>
+    <text x="-50" y="155" font-family="Arial" font-size="16" fill="#333333" text-anchor="end">VREF</text>
+
+    <text x="350" y="55" font-family="Arial" font-size="16" fill="#333333">VOUT</text>
+    <text x="350" y="105" font-family="Arial" font-size="16" fill="#333333">RTN</text>
+    <text x="350" y="155" font-family="Arial" font-size="16" fill="#333333">TRIM</text>
+
+    <!-- Internal regulator circuit symbol -->
+    <g transform="translate(150, 100)">
+      <!-- Op-amp triangle for regulation -->
+      <path d="M -40,-30 L -40,30 L 20,0 Z" fill="none" stroke="#0066cc" stroke-width="2"/>
+
+      <!-- Feedback loop -->
+      <path d="M 20,0 Q 40,0 40,20 Q 40,40 -20,40 Q -50,40 -50,20"
+            fill="none" stroke="#0066cc" stroke-width="2" stroke-dasharray="3,3"/>
+
+      <!-- Reference symbol -->
+      <line x1="-45" y1="10" x2="-45" y2="20" stroke="#0066cc" stroke-width="2"/>
+      <line x1="-50" y1="20" x2="-40" y2="20" stroke="#0066cc" stroke-width="2"/>
+      <line x1="-48" y1="23" x2="-42" y2="23" stroke="#0066cc" stroke-width="2"/>
+    </g>
+
+    <!-- Module label -->
+    <text x="150" y="30" font-family="Arial" font-size="24" fill="#0066cc" text-anchor="middle" font-weight="bold">PRM</text>
+  </g>
+
+  <!-- Title Text -->
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="36" fill="#333333" text-anchor="middle" font-weight="bold">PRM Regulator Module</text>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="28" fill="#666666" text-anchor="middle">PRM稳压器模块</text>
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="20" fill="#999999" text-anchor="middle">Pre-Regulation Module</text>
+</svg>
