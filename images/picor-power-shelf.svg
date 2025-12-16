@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#f0f0f0"/>
+  <rect x="10" y="15" width="180" height="70" fill="#e6e6e6"/>
+  <rect x="20" y="25" width="160" height="15" fill="#4a90e2"/>
+  <rect x="20" y="45" width="70" height="10" fill="#7ed321"/>
+  <rect x="110" y="45" width="70" height="10" fill="#7ed321"/>
+  <rect x="20" y="60" width="70" height="10" fill="#f5a623"/>
+  <rect x="110" y="60" width="70" height="10" fill="#f5a623"/>
+  <text x="100" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Power Shelf</text>
+</svg>
